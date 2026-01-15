@@ -1,45 +1,93 @@
 ================================================================================
-BES-Website-v1.1_2025-Jan-15.zip
+BES-Website-v1.2_2025-Jan-15.zip
 MANIFEST
 ================================================================================
 
 Project: BES - Badolato Electrical Services
 Created: 15-Jan-2025
-Version: 1.1
+Version: 1.2
 
 ================================================================================
 CONTENTS
 ================================================================================
 
-1. index.html       - Complete single-page website
-                      - Hero with Tesla quote
+1. index.html       - Complete single-page website (EXPANDED)
+                      
+                      EXISTING SECTIONS:
+                      - Hero with Tesla quote (updated quote)
                       - Trust bar (5 stats)
                       - 6 customer segments
                       - The Oath section
-                      - Services grid (4 categories)
+                      - Services grid (4 categories, more Tesla quotes)
                       - Seniors section with discount callout
                       - 6 testimonials
                       - About section (Michael's story)
                       - Tesla Connection section
                       - Contractors section
-                      - SmartSubmit™ intake form
+                      - SmartSubmit™ intake form (new Tesla quote)
                       - Emergency callout
                       - Contact form
                       - Mobile responsive
+                      
+                      NEW IN v1.2:
+                      - Tesla Timeline (1856-1943 milestones)
+                      - Tesla Documentary embed (PBS American Experience)
+                      - Tesla Quotes Collection (6 verified quotes)
+                      - RESOURCES SECTION with 5 subsections:
+                        • Professional Organizations (NECA, IBEW, NFPA, ESFI, IEC)
+                        • Florida Licensing (DBPR verification, regulations)
+                        • Energy Tools (FPL, Duke Energy, calculators)
+                        • Safety Tips (warning signs, hurricane prep)
+                        • Tesla Archives (museums, writings, documentaries)
+                      - Additional Tesla quotes woven throughout site
 
-2. styles.css       - Complete styling
-                      - CSS variables for theming
-                      - Tesla purple color palette
-                      - Dark theme for Tesla section
-                      - All responsive breakpoints
+2. styles.css       - Complete styling (EXPANDED)
+                      - All v1.1 styles
+                      - NEW: Tesla timeline styles
+                      - NEW: Video container responsive embed
+                      - NEW: Quotes collection grid
+                      - NEW: Resource section navigation
+                      - NEW: Resource cards layout
+                      - NEW: Safety tips grid
+                      - NEW: License verification box
+                      - NEW: Inline Tesla quote styling
 
 3. logo.svg         - Tesla coil logo with electric arcs
                       - Text: BADOLATO / ELECTRICAL SERVICES
                       - Tagline: Licensed • Bonded • Insured
 
-4. README.md        - GitHub repository documentation
+4. README.md        - GitHub repository documentation (updated)
 
 5. _manifest.txt    - This file
+
+================================================================================
+NEW TESLA QUOTES ADDED (with verified sources)
+================================================================================
+
+HERO SECTION:
+"Throughout space there is energy. It is a mere question of time when 
+men will succeed in attaching their machinery to the very wheelwork 
+of nature." — 1891 Lecture
+
+SERVICES SECTION:
+"The scientific man does not aim at an immediate result. His duty is 
+to lay the foundation for those who are to come, and point the way."
+
+INDUSTRIAL SECTION:
+"This planet, with all its appalling immensity, is to electric currents 
+virtually no more than a small metal ball." — 1904
+
+SMARTSUBMIT SECTION:
+"As soon as it is completed, it will be possible for a business man in 
+New York to dictate instructions, and have them instantly appear in type 
+at his office in London or elsewhere." — 1908
+
+TESLA LEGACY SECTION:
+"Let the future tell the truth and evaluate each one according to his 
+work and accomplishments. The present is theirs; the future, for which 
+I really worked, is mine." — Politika, 1927
+
+QUOTES COLLECTION (6 additional verified quotes with sources)
 
 ================================================================================
 DEPLOYMENT INSTRUCTIONS
@@ -49,7 +97,7 @@ DEPLOYMENT INSTRUCTIONS
 2. Go to GitHub repo: github.com/badandy-beep/badolato-electrical-services
 3. Click "Add file" → "Upload files"
 4. Drag index.html, styles.css, logo.svg, README.md
-5. Commit message: "v1.1 - Tesla content, testimonials, logo"
+5. Commit message: "v1.2 - Resources section, Tesla timeline, documentary"
 6. Click "Commit changes"
 7. Connect to Vercel for deployment
 
@@ -63,6 +111,37 @@ PLACEHOLDERS (Phase 2)
 - [ ] SmartSubmit™ backend integration
 - [ ] Form submission handling
 - [ ] Real testimonials (once available)
+- [ ] Michael's video tips for Resources section
+
+================================================================================
+RESOURCES LINKED (External Sites)
+================================================================================
+
+Professional Organizations:
+- necanet.org (NECA)
+- ibew.org (IBEW)
+- nfpa.org (NFPA)
+- esfi.org (ESFI)
+- ieci.org (IEC)
+- electricaltrainingalliance.org
+
+Florida Resources:
+- myfloridalicense.com (DBPR)
+- leg.state.fl.us (Florida Statutes)
+- scgov.net (Sarasota County)
+
+Energy Tools:
+- fpl.com (FPL Energy Manager)
+- duke-energy.com (Duke Energy)
+- energystar.gov (ENERGY STAR)
+- energy.gov (DOE EV Guide)
+
+Tesla Archives:
+- nikolateslamuseum.org
+- teslasciencecenter.org
+- gutenberg.org
+- archive.org
+- pbs.org/americanexperience
 
 ================================================================================
 © 2025 Badolato Electrical Services | A Noetic Dharma Group Project

@@ -16,6 +16,7 @@
   /* Tesla Purple (from logo brief) */
   --purple-light: #D0A8E2;
   --purple-lighter: #E8CFF0;
+  --purple-dark: #8B5DA8;
   
   /* Neutrals */
   --white: #FFFFFF;
@@ -509,6 +510,34 @@ ul, ol {
 }
 
 /* ========================================
+   INLINE TESLA QUOTE
+======================================== */
+.inline-tesla-quote {
+  max-width: 700px;
+  margin: 0 auto var(--space-2xl);
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, var(--purple-lighter) 0%, rgba(208, 168, 226, 0.3) 100%);
+  border-left: 4px solid var(--purple-light);
+  border-radius: var(--radius-md);
+}
+
+.inline-tesla-quote blockquote {
+  font-family: var(--font-quote);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+.inline-tesla-quote cite {
+  display: block;
+  margin-top: var(--space-sm);
+  font-size: 0.8125rem;
+  font-style: normal;
+  color: var(--purple-dark);
+}
+
+/* ========================================
    SEGMENTS (Who We Serve)
 ======================================== */
 .segments {
@@ -684,7 +713,7 @@ ul, ol {
   font-family: var(--font-quote);
   font-size: 0.8125rem;
   font-style: italic;
-  color: var(--purple-light);
+  color: var(--purple-dark);
   margin-bottom: var(--space-md);
   padding: var(--space-sm);
   background: var(--gray-50);
@@ -1049,11 +1078,521 @@ ul, ol {
 }
 
 /* ========================================
+   TESLA TIMELINE
+======================================== */
+.tesla-timeline {
+  margin-top: var(--space-4xl);
+  padding-top: var(--space-3xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tesla-timeline h3 {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--purple-light), var(--purple-dark));
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.timeline-year {
+  flex: 0 0 80px;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--gold);
+  text-align: center;
+  padding-top: var(--space-sm);
+}
+
+.timeline-content {
+  flex: 1;
+  max-width: calc(50% - 60px);
+  padding: var(--space-lg);
+  background: var(--dark-bg-light);
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: 40px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: 40px;
+}
+
+.timeline-content h4 {
+  color: var(--purple-light);
+  font-size: 1rem;
+  margin-bottom: var(--space-sm);
+}
+
+.timeline-content p {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item,
+  .timeline-item:nth-child(odd) {
+    flex-direction: row;
+  }
+  
+  .timeline-year {
+    flex: 0 0 60px;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: var(--space-sm);
+  }
+  
+  .timeline-content,
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    max-width: none;
+    margin-left: var(--space-md);
+    margin-right: 0;
+  }
+}
+
+/* ========================================
+   TESLA DOCUMENTARY
+======================================== */
+.tesla-documentary {
+  margin-top: var(--space-4xl);
+  padding-top: var(--space-3xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.tesla-documentary h3 {
+  color: var(--white);
+  margin-bottom: var(--space-md);
+}
+
+.tesla-documentary > p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: var(--space-xl);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-note {
+  margin-top: var(--space-lg);
+  font-size: 0.875rem;
+  color: var(--gray-400);
+}
+
+.video-note a {
+  color: var(--purple-light);
+}
+
+.video-note a:hover {
+  color: var(--purple-lighter);
+}
+
+/* ========================================
+   TESLA QUOTES COLLECTION
+======================================== */
+.tesla-quotes-collection {
+  margin-top: var(--space-4xl);
+  padding-top: var(--space-3xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tesla-quotes-collection h3 {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.quote-card {
+  padding: var(--space-xl);
+  background: var(--dark-bg-light);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--purple-light);
+}
+
+.quote-card blockquote {
+  font-family: var(--font-quote);
+  font-size: 0.9375rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.quote-card cite {
+  display: block;
+  margin-top: var(--space-md);
+  font-size: 0.75rem;
+  font-style: normal;
+  color: var(--gray-400);
+}
+
+@media (max-width: 900px) {
+  .quotes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .quotes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   RESOURCES SECTION
+======================================== */
+.resources-section {
+  padding: var(--space-4xl) 0;
+  background: var(--white);
+}
+
+.resource-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-3xl);
+  padding: var(--space-md);
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+}
+
+.resource-nav-item {
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.resource-nav-item:hover {
+  color: var(--blue-primary);
+  background: var(--white);
+}
+
+.resource-nav-item.active {
+  color: var(--blue-primary);
+  background: var(--white);
+  border-color: var(--blue-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.resource-block {
+  margin-bottom: var(--space-4xl);
+  scroll-margin-top: 100px;
+}
+
+.resource-block h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--blue-light);
+}
+
+.resource-block > p {
+  font-size: 1.0625rem;
+  color: var(--gray-600);
+  margin-bottom: var(--space-xl);
+}
+
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.resource-card {
+  padding: var(--space-xl);
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.resource-card:hover {
+  border-color: var(--blue-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.resource-card h4 {
+  font-size: 1.125rem;
+  color: var(--blue-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.resource-card .resource-subtitle {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md);
+}
+
+.resource-card p {
+  font-size: 0.9375rem;
+  color: var(--gray-700);
+}
+
+.resource-link {
+  display: inline-block;
+  margin-top: var(--space-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--blue-primary);
+}
+
+.resource-link:hover {
+  color: var(--blue-dark);
+}
+
+.resource-card-highlight {
+  background: linear-gradient(135deg, var(--blue-light) 0%, rgba(0, 86, 166, 0.1) 100%);
+  border-color: var(--blue-primary);
+}
+
+@media (max-width: 900px) {
+  .resource-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .resource-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .resource-nav {
+    flex-direction: column;
+  }
+  
+  .resource-nav-item {
+    text-align: center;
+  }
+}
+
+/* License Verification Box */
+.license-verification-box {
+  margin-top: var(--space-2xl);
+  padding: var(--space-xl);
+  background: var(--blue-dark);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.license-verification-box h4 {
+  color: var(--gold);
+  margin-bottom: var(--space-md);
+}
+
+.license-verification-box p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.license-verification-box .btn-secondary {
+  margin-top: var(--space-md);
+  background: var(--white);
+  color: var(--blue-dark);
+  border-color: var(--white);
+}
+
+/* Safety Tips Grid */
+.safety-tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.safety-tip {
+  padding: var(--space-xl);
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+}
+
+.safety-tip h4 {
+  font-size: 1.125rem;
+  color: var(--gray-900);
+  margin-bottom: var(--space-md);
+}
+
+.safety-tip ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.safety-tip li {
+  font-size: 0.9375rem;
+  color: var(--gray-700);
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.safety-tip li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--blue-primary);
+  font-weight: bold;
+}
+
+.safety-tip-action {
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  background: rgba(239, 68, 68, 0.1);
+  border-left: 3px solid var(--danger);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--danger);
+}
+
+@media (max-width: 768px) {
+  .safety-tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Safety Resources Box */
+.safety-resources-box {
+  margin-top: var(--space-2xl);
+  padding: var(--space-xl);
+  background: var(--blue-light);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.safety-resources-box h4 {
+  color: var(--blue-dark);
+  margin-bottom: var(--space-md);
+}
+
+.safety-resources-box p {
+  color: var(--gray-700);
+  margin-bottom: var(--space-lg);
+}
+
+.safety-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.safety-links a {
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--white);
+  color: var(--blue-primary);
+  border: 1px solid var(--blue-primary);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.safety-links a:hover {
+  background: var(--blue-primary);
+  color: var(--white);
+}
+
+/* Tesla Books Box */
+.tesla-books-box {
+  margin-top: var(--space-2xl);
+  padding: var(--space-xl);
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+}
+
+.tesla-books-box h4 {
+  color: var(--gray-900);
+  margin-bottom: var(--space-md);
+}
+
+.tesla-books-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.tesla-books-box li {
+  font-size: 0.9375rem;
+  color: var(--gray-700);
+}
+
+.tesla-books-box li strong {
+  color: var(--gray-900);
+}
+
+/* ========================================
    CONTRACTORS
 ======================================== */
 .contractors-section {
   padding: var(--space-4xl) 0;
-  background: var(--white);
+  background: var(--gray-50);
 }
 
 .contractors-inner {
@@ -1192,6 +1731,30 @@ ul, ol {
   font-style: italic;
 }
 
+.smartsubmit-tesla-quote {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid var(--purple-light);
+  border-radius: var(--radius-md);
+}
+
+.smartsubmit-tesla-quote blockquote {
+  font-family: var(--font-quote);
+  font-size: 0.9375rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.smartsubmit-tesla-quote cite {
+  display: block;
+  margin-top: var(--space-sm);
+  font-size: 0.75rem;
+  font-style: normal;
+  color: var(--purple-light);
+}
+
 .smartsubmit-form-container {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1316,7 +1879,7 @@ textarea {
 .service-area {
   padding: var(--space-4xl) 0;
   text-align: center;
-  background: var(--gray-50);
+  background: var(--white);
 }
 
 .service-area h2 {
@@ -1373,7 +1936,7 @@ textarea {
 ======================================== */
 .contact {
   padding: var(--space-4xl) 0;
-  background: var(--white);
+  background: var(--gray-50);
 }
 
 .contact-inner {
@@ -1428,7 +1991,7 @@ textarea {
 }
 
 .contact-form {
-  background: var(--gray-50);
+  background: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
@@ -1550,6 +2113,13 @@ textarea {
 .footer-bottom p {
   font-size: 0.8125rem;
   color: var(--gray-500);
+  margin-bottom: var(--space-xs);
+}
+
+.footer-attribution {
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  font-style: italic;
 }
 
 @media (max-width: 900px) {
