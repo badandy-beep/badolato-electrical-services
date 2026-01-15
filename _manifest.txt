@@ -1,180 +1,58 @@
 ================================================================================
-BES-Website-v1.3_2025-Jan-15.zip
-MANIFEST
+BES WEBSITE v1.4 - ZIP PACKAGE MANIFEST
 ================================================================================
 
 Project: BES - Badolato Electrical Services
-Created: 15-Jan-2025
-Version: 1.3
-
-================================================================================
-VERSION 1.3 CHANGES — LICENSE DISCLOSURE UPDATE
-================================================================================
-
-This update adds proper license disclosure language throughout the site to 
-comply with Florida Statute §489.119 (contractor advertising requirements).
-
-Michael Badolato operates as a qualified electrician under a master 
-electrician's license held by a qualifying contractor. This is a common 
-and legitimate arrangement in Florida's electrical industry.
-
-KEY CHANGES:
-
-1. ABOUT SECTION
-   - Added "License Disclosure Box" explaining the arrangement
-   - Changed "licensed, bonded, and insured" to "bonded and insured"
-   - Disclosure explains FL Statute Chapter 489 compliance
-
-2. RESOURCES SECTION (License Verification Box)
-   - Expanded with full license details
-   - Shows License Number, License Holder, Status
-   - Added note explaining the arrangement
-   - Link to DBPR verification tool
-
-3. CONTACT SECTION
-   - Added license number in footer area
-   - Changed from "Licensed • Bonded • Insured" to include actual license #
-
-4. FOOTER
-   - Added full license disclosure statement
-   - Complies with FL advertising requirements
-
-5. LOGO.SVG
-   - Updated tagline from "Licensed • Bonded • Insured" 
-   - Now shows: "Bonded • Insured • FL License #EC-XXXXXX"
-
-6. HERO SECTION
-   - Changed "Master Electrician Craftsmanship" to "Expert Electrical 
-     Craftsmanship" for accuracy
-
-================================================================================
-PLACEHOLDERS — MUST UPDATE BEFORE LAUNCH
-================================================================================
-
-The following placeholder text appears throughout the site and must be 
-replaced with actual information from Michael:
-
-| Placeholder                    | Replace With                      |
-|--------------------------------|-----------------------------------|
-| #EC-XXXXXX                     | Actual FL Electrical Contractor   |
-|                                | License Number                    |
-|--------------------------------|-----------------------------------|
-| [QUALIFYING CONTRACTOR NAME]   | Name of the licensed contractor   |
-|                                | or business holding the license   |
-
-LOCATIONS OF PLACEHOLDERS:
-
-- index.html (About section - License Disclosure Box)
-- index.html (Resources section - License Verification Box)
-- index.html (Contact section)
-- index.html (Footer - License Disclosure)
-- logo.svg (Tagline text)
+Date: 15-Jan-2025
+Version: 1.4 (Aesthetic Enhancement Update)
 
 ================================================================================
 CONTENTS
 ================================================================================
 
-1. index.html       - Complete single-page website (UPDATED v1.3)
-                      
-                      EXISTING SECTIONS:
-                      - Hero with Tesla quote (updated subtitle)
-                      - Trust bar (5 stats)
-                      - 6 customer segments
-                      - The Oath section
-                      - Services grid (4 categories)
-                      - Seniors section with discount callout
-                      - 6 testimonials
-                      - About section with LICENSE DISCLOSURE BOX (NEW)
-                      - Tesla Connection section
-                      - Tesla Timeline
-                      - Tesla Documentary
-                      - Tesla Quotes Collection
-                      - Resources section with LICENSE VERIFICATION BOX (UPDATED)
-                      - Contractors section
-                      - SmartSubmit™ intake form
-                      - Emergency callout
-                      - Contact form with LICENSE DISPLAY (NEW)
-                      - FOOTER LICENSE DISCLOSURE (NEW)
-                      - Mobile responsive
-
-2. styles.css       - Complete styling (UPDATED v1.3)
-                      - All previous styles
-                      - NEW: .license-disclosure-box (About section)
-                      - NEW: .license-details (Resources verification box)
-                      - NEW: .license-note styling
-                      - NEW: .license-disclosure-small (Contact section)
-                      - NEW: .footer-license-disclosure
-
-3. logo.svg         - Tesla coil logo with electric arcs
-                      - Text: BADOLATO / ELECTRICAL SERVICES
-                      - Tagline: BONDED • INSURED • FL LICENSE #EC-XXXXXX
-
-4. README.md        - GitHub repository documentation (updated for v1.3)
-
-5. _manifest.txt    - This file
-
-================================================================================
-FLORIDA LICENSE DISCLOSURE REQUIREMENTS (Reference)
-================================================================================
-
-Per Florida Statute §489.119:
-- License number must appear on all advertising, bids, proposals, contracts
-- Applies to all media including websites, social media, print
-- Failure to comply can result in fines or license suspension
-
-Per Florida Statute §489.127:
-- Cannot falsely hold yourself out as licensed
-- Cannot present another's certificate as your own
-- CAN legally operate under a qualifying contractor's license
-
-The disclosure language used on this site:
-
-"All electrical work performed under Florida Certified Electrical 
-Contractor License #EC-XXXXXX held by [QUALIFYING CONTRACTOR NAME]. 
-Michael Badolato operates as a qualified electrician under this license 
-pursuant to Florida Statute Chapter 489."
-
-This language:
-✓ Clearly identifies the actual license holder
-✓ Shows the license number as required
-✓ Explains Michael's role (qualified electrician)
-✓ References the governing statute
-✓ Is standard industry practice in Florida
+index.html    - Complete website HTML (updated script reference)
+styles.css    - Enhanced stylesheet with v1.4 improvements
+script.js     - NEW - External JavaScript for animations & UX
+logo.svg      - Existing logo file
 
 ================================================================================
 DEPLOYMENT INSTRUCTIONS
 ================================================================================
 
-1. BEFORE DEPLOYMENT - Update placeholders:
-   - Get actual license number from Michael
-   - Get qualifying contractor's name
-   - Search and replace all instances
+1. Go to: github.com/badandy-beep/badolato-electrical-services
 
-2. Unzip all files
+2. Delete existing files (or overwrite):
+   - index.html
+   - styles.css
 
-3. Go to GitHub repo: github.com/badandy-beep/badolato-electrical-services
+3. Upload ALL files from this ZIP:
+   - index.html (overwrites)
+   - styles.css (overwrites)
+   - script.js (NEW file)
+   - logo.svg (keep existing or overwrite - same file)
 
-4. Click "Add file" → "Upload files"
+4. Commit with message: "v1.4 - Aesthetic enhancement update"
 
-5. Drag index.html, styles.css, logo.svg, README.md
-
-6. Commit message: "v1.3 - License disclosure compliance update"
-
-7. Click "Commit changes"
-
-8. Connect to Vercel for deployment
+5. Vercel auto-deploys in ~60 seconds
 
 ================================================================================
-REMAINING PLACEHOLDERS (Phase 2)
+WHAT'S NEW IN v1.4
 ================================================================================
 
-- [ ] Michael Badolato photo (About section)
-- [ ] Tesla/coil imagery (Tesla Connection section)
-- [ ] Hero image (Michael at work)
-- [ ] SmartSubmit™ backend integration
-- [ ] Form submission handling
-- [ ] Real testimonials (once available)
-- [ ] Michael's video tips for Resources section
+VISUAL:
+- Refined color palette (deeper blues, brighter golds)
+- Enhanced typography spacing
+- Increased whitespace between sections
+- Scroll animations on cards
+- Fixed header with blur effect
+- Better button hover effects
+- Electric glow on Tesla quotes
+
+TECHNICAL:
+- External script.js file (cacheable)
+- CSS-only animations (no heavy libraries)
+- Better mobile responsiveness
+- Print stylesheet included
 
 ================================================================================
 © 2025 Badolato Electrical Services | A Noetic Dharma Group Project
