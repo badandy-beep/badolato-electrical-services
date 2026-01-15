@@ -1,0 +1,48 @@
+================================================================================
+BES-Website-v1.0_2025-Jan-15.zip
+MANIFEST
+================================================================================
+
+Project: BES - Badolato Electrical Services
+Created: 15-Jan-2025
+Version: 1.0 (Initial Release)
+
+================================================================================
+CONTENTS
+================================================================================
+
+1. index.html       - Complete single-page website
+                      - Hero, trust bar, 6 customer segments
+                      - SmartSubmit™ intake form
+                      - Services grid, About, Contact
+                      - Mobile responsive
+
+2. styles.css       - Professional light theme styling
+                      - CSS variables for easy customization
+                      - Responsive breakpoints
+
+3. README.md        - GitHub repository documentation
+
+================================================================================
+DEPLOYMENT INSTRUCTIONS
+================================================================================
+
+1. Unzip all files
+2. Upload to GitHub repo: badandy-beep/badolato-electrical-services
+3. Connect to Vercel for auto-deployment
+4. Live URL will be: badolato-electrical-services.vercel.app
+
+================================================================================
+PHASE 2 TODO (Not included in v1.0)
+================================================================================
+
+- SmartSubmit™ backend (audio/video upload + transcription)
+- Calendar integration
+- SMS/Twilio integration
+- Newsletter signup (Klaviyo)
+- vCard download
+- Logo SVG asset
+
+================================================================================
+© 2025 Badolato Electrical Services | A Noetic Dharma Group Project
+================================================================================
