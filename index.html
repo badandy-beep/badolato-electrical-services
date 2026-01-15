@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Badolato Electrical Services | Licensed Electrician | Southwest Florida</title>
-  <meta name="description" content="Licensed, bonded & insured electrical contractor serving Southwest Florida. Residential, commercial, marine & industrial. SmartSubmit™ for fast estimates." />
+  <meta name="description" content="Licensed, bonded & insured electrical contractor serving Southwest Florida. Residential, commercial, marine & industrial. 3rd-generation Sarasota business. SmartSubmit™ for fast estimates. 24/7 emergency." />
+  <meta name="author" content="Badolato Electrical Services" />
+  <meta name="keywords" content="electrician, electrical contractor, Sarasota, Venice, Charlotte County, Florida, residential, commercial, marine, industrial, EV charger, panel upgrade, licensed, bonded, insured, Nikola Tesla" />
   
+  <!-- Open Graph -->
+  <meta property="og:title" content="Badolato Electrical Services | Southwest Florida" />
+  <meta property="og:description" content="Licensed, bonded & insured electrical contractor. Residential, commercial, marine & industrial. SmartSubmit™ for fast estimates." />
+  <meta property="og:type" content="website" />
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
@@ -14,17 +22,15 @@
 </head>
 <body>
 
-  <!-- ========================================
-       UNIVERSAL HEADER (Same on All Pages)
-  ======================================== -->
+  <!-- HEADER v2.1 - Tesla/Banner/Phone + Two Nav Bars -->
   <header class="site-header">
     
-    <!-- Main Header Bar -->
+    <!-- Main Header Bar: Tesla | Banner | Phone -->
     <div class="header-main">
-      <div class="header-inner">
+      <div class="container header-inner">
         
-        <!-- Tesla Portrait (Left) -->
-        <a href="smartsubmit.html" class="header-tesla" title="Click for Quote">
+        <!-- Tesla Portrait (Left) - Links to SmartSubmit -->
+        <a href="#smartsubmit" class="header-tesla" title="Get a Quote">
           <div class="tesla-portrait">
             <!-- Replace with actual Tesla image -->
             <span>Tesla<br>Portrait</span>
@@ -34,27 +40,26 @@
         
         <!-- Banner Logo (Center) -->
         <div class="header-logo">
-          <a href="index.html">
-            <!-- Replace with Midjourney banner logo -->
+          <a href="#">
+            <!-- Replace with Midjourney banner logo when ready -->
             <div class="banner-logo-placeholder">
               BADOLATO ELECTRICAL
             </div>
           </a>
         </div>
         
-        <!-- Phone CTA (Right) -->
+        <!-- Phone CTA (Right) - Same gold button style as v1.4 -->
         <div class="header-phone">
-          <a href="tel:9413008658" class="phone-link">
-            <span class="phone-icon">📞</span>
-            <span class="phone-number">941-300-VOLT</span>
-            <span class="phone-label">24/7 Emergency</span>
+          <a href="tel:9413008658" class="btn btn-gold btn-phone-header">
+            941-300-VOLT
           </a>
+          <span class="phone-label">24/7 Emergency</span>
         </div>
         
       </div>
     </div>
     
-    <!-- Tagline Bar (Rotating on Homepage) -->
+    <!-- Tagline Bar (Blue background, White text) -->
     <div class="tagline-bar">
       <div class="tagline-rotator">
         <div class="tagline-item">"Powering Florida. Engineering Tomorrow."</div>
@@ -64,130 +69,72 @@
       </div>
     </div>
     
-    <!-- Navigation Bar 1: Industries -->
-    <nav class="nav-industries">
-      <ul>
-        <li><a href="residential.html">Residential</a></li>
-        <li><a href="seniors.html">Seniors</a></li>
-        <li><a href="commercial.html">Commercial</a></li>
-        <li><a href="industrial.html">Industrial</a></li>
-        <li><a href="marine.html">Marine</a></li>
-        <li><a href="contractors.html">Property Managers</a></li>
-      </ul>
+    <!-- Navigation Bar 1: UTILITY (TOP) -->
+    <nav class="nav-bar nav-utility">
+      <div class="container">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tesla">Tesla Legacy</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#smartsubmit">SmartSubmit™</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     
-    <!-- Navigation Bar 2: Utility -->
-    <nav class="nav-utility">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="tesla.html">Tesla Legacy</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="smartsubmit.html">SmartSubmit™</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- Navigation Bar 2: INDUSTRIES (BOTTOM) -->
+    <nav class="nav-bar nav-industries">
+      <div class="container">
+        <ul>
+          <li><a href="#residential">Residential</a></li>
+          <li><a href="#seniors">Seniors</a></li>
+          <li><a href="#commercial">Commercial</a></li>
+          <li><a href="#industrial">Industrial</a></li>
+          <li><a href="#marine">Marine</a></li>
+          <li><a href="#contractors">Property Managers</a></li>
+        </ul>
+      </div>
     </nav>
     
   </header>
 
   <main>
-    
-    <!-- ========================================
-         HERO SECTION (Brief About)
-    ======================================== -->
-    <section class="home-hero">
-      <div class="container">
-        <div class="home-hero-inner">
-          
-          <div class="home-hero-content">
-            <div class="home-hero-badges">
-              <span>Licensed</span>
-              <span>Bonded</span>
-              <span>Insured</span>
-              <span>3rd Generation</span>
-            </div>
-            <h1>Southwest Florida's Trusted Electrician</h1>
-            <p>Badolato Electrical Services delivers safe, reliable, code-compliant electrical work for homes, businesses, marinas, and industrial facilities. Third-generation local expertise, inspired by the precision of Nikola Tesla.</p>
-            <a href="smartsubmit.html" class="btn btn-gold btn-lg">Get Your Free Estimate →</a>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>Licensed</span>
+            <span>Bonded</span>
+            <span>Insured</span>
           </div>
-          
-          <div class="home-hero-image">
-            <div class="home-hero-image-placeholder">
-              Tesla Coil<br>or<br>Company Imagery<br><br>[Image Placeholder]
-            </div>
+          <h1>Powering Florida.<br>Engineering Tomorrow.</h1>
+          <p class="hero-subtitle">Expert Electrical Craftsmanship. Precision You Can Trust.</p>
+          <p class="hero-description">Third-generation Southwest Florida business owner Michael Badolato delivers safe, reliable, code-compliant electrical work for homes, businesses, marinas, and industrial facilities.</p>
+          <div class="hero-ctas">
+            <a href="#smartsubmit" class="btn btn-primary btn-lg">Get a Fast Estimate</a>
+            <a href="tel:9413008658" class="btn btn-secondary btn-lg">Call 941-300-VOLT</a>
           </div>
-          
+          <p class="hero-emergency">🚨 24/7 Emergency Service Available</p>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-placeholder">
+            <span>Michael Badolato<br>at Work</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-quote">
+        <div class="container">
+          <blockquote>
+            "Throughout space there is energy. It is a mere question of time when men will succeed in attaching their machinery to the very wheelwork of nature."
+            <cite>— Nikola Tesla, 1891 Lecture</cite>
+          </blockquote>
         </div>
       </div>
     </section>
-    
-    <!-- ========================================
-         SERVICE GRID (Links to Industry Pages)
-    ======================================== -->
-    <section class="home-services">
-      <div class="container">
-        
-        <div class="home-services-grid">
-          
-          <!-- GET A QUOTE (Featured - Large) -->
-          <a href="smartsubmit.html" class="service-card service-card-quote">
-            <span class="service-card-icon">📸</span>
-            <h3>Get a Fast Quote</h3>
-            <p>Upload photos of your electrical issue and receive an estimate — often within hours. Our SmartSubmit™ system makes it easy.</p>
-            <span class="btn btn-primary" style="margin-top: auto;">SmartSubmit™ →</span>
-          </a>
-          
-          <!-- SENIORS (Featured) -->
-          <a href="seniors.html" class="service-card service-card-seniors">
-            <span class="discount-badge">Senior Discount</span>
-            <span class="service-card-icon">👴</span>
-            <h3>Seniors</h3>
-            <p>Patient service, clear explanations, safety-first approach.</p>
-          </a>
-          
-          <!-- RESIDENTIAL -->
-          <a href="residential.html" class="service-card">
-            <span class="service-card-icon">🏠</span>
-            <h3>Residential</h3>
-            <p>Panel upgrades, lighting, EV chargers, generators & more.</p>
-          </a>
-          
-          <!-- COMMERCIAL -->
-          <a href="commercial.html" class="service-card">
-            <span class="service-card-icon">🏢</span>
-            <h3>Commercial</h3>
-            <p>Tenant build-outs, emergency lighting, equipment circuits.</p>
-          </a>
-          
-          <!-- INDUSTRIAL -->
-          <a href="industrial.html" class="service-card">
-            <span class="service-card-icon">🏭</span>
-            <h3>Industrial</h3>
-            <p>Three-phase distribution, MCC panels, automation support.</p>
-          </a>
-          
-          <!-- MARINE -->
-          <a href="marine.html" class="service-card">
-            <span class="service-card-icon">⚓</span>
-            <h3>Marine</h3>
-            <p>Shore power, dock wiring, onboard systems, corrosion-resistant.</p>
-          </a>
-          
-          <!-- PROPERTY MANAGERS -->
-          <a href="contractors.html" class="service-card">
-            <span class="service-card-icon">📋</span>
-            <h3>Property Managers</h3>
-            <p>Turnovers, inspections, maintenance programs, priority scheduling.</p>
-          </a>
-          
-        </div>
-        
-      </div>
-    </section>
-    
-    <!-- ========================================
-         TRUST BAR (Compact)
-    ======================================== -->
+
+    <!-- TRUST BAR -->
     <section class="trust-bar">
       <div class="container">
         <ul class="trust-list">
@@ -201,7 +148,7 @@
           </li>
           <li>
             <strong>24/7</strong>
-            <span>Emergency</span>
+            <span>Emergency Response</span>
           </li>
           <li>
             <strong>100%</strong>
@@ -214,50 +161,1038 @@
         </ul>
       </div>
     </section>
-    
+
+    <!-- WHO WE SERVE -->
+    <section class="segments" id="segments">
+      <div class="container">
+        <div class="section-header">
+          <h2>Who We Serve</h2>
+          <p>Expert electrical services tailored to your specific needs</p>
+        </div>
+        <div class="segment-grid">
+          
+          <a href="#residential" class="segment-card">
+            <div class="segment-icon">🏠</div>
+            <h3>Homeowners</h3>
+            <p>Panel upgrades, lighting, EV chargers, generators, and whole-home electrical care.</p>
+            <span class="segment-link">View Services →</span>
+          </a>
+          
+          <a href="#seniors" class="segment-card segment-featured">
+            <div class="segment-badge">Senior Discount</div>
+            <div class="segment-icon">👴</div>
+            <h3>Seniors</h3>
+            <p>Patient, respectful service with clear explanations and safety-first approach.</p>
+            <span class="segment-link">View Services →</span>
+          </a>
+          
+          <a href="#commercial" class="segment-card">
+            <div class="segment-icon">🏢</div>
+            <h3>Commercial</h3>
+            <p>Tenant build-outs, emergency lighting, equipment circuits, and maintenance programs.</p>
+            <span class="segment-link">View Services →</span>
+          </a>
+          
+          <a href="#marine" class="segment-card">
+            <div class="segment-icon">⚓</div>
+            <h3>Marine</h3>
+            <p>Shore power, dock wiring, onboard systems, and corrosion-resistant installations.</p>
+            <span class="segment-link">View Services →</span>
+          </a>
+          
+          <a href="#industrial" class="segment-card">
+            <div class="segment-icon">🏭</div>
+            <h3>Industrial</h3>
+            <p>Three-phase distribution, MCC panels, VFD installations, and automation support.</p>
+            <span class="segment-link">View Services →</span>
+          </a>
+          
+          <a href="#contractors" class="segment-card">
+            <div class="segment-icon">📋</div>
+            <h3>Contractors &amp; Property Managers</h3>
+            <p>Project-based work, turnovers, inspections, and ongoing service partnerships.</p>
+            <span class="segment-link">View Services →</span>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- THE OATH -->
+    <section class="oath" id="oath">
+      <div class="container">
+        <h2>Our Oath to Every Client</h2>
+        <div class="oath-content">
+          <div class="oath-text">
+            <p><strong>We wire with integrity.</strong></p>
+            <p><strong>We build with precision.</strong></p>
+            <p><strong>We honor your home and your business.</strong></p>
+            <p><strong>We respect your time.</strong></p>
+            <p><strong>We innovate constantly.</strong></p>
+            <p class="oath-closing">Electricity is our discipline — service is our promise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Electrical Services</h2>
+          <p>Complete electrical solutions from repair to new construction</p>
+        </div>
+        
+        <!-- Tesla Quote for Services -->
+        <div class="inline-tesla-quote">
+          <blockquote>
+            "The scientific man does not aim at an immediate result. His duty is to lay the foundation for those who are to come, and point the way."
+            <cite>— Nikola Tesla</cite>
+          </blockquote>
+        </div>
+        
+        <div class="services-grid">
+          
+          <div class="service-category" id="residential">
+            <h3>🏠 Residential</h3>
+            <ul>
+              <li>Panel upgrades &amp; replacements</li>
+              <li>Lighting design &amp; installation</li>
+              <li>EV charger installation</li>
+              <li>Whole-home surge protection</li>
+              <li>Generator installation &amp; service</li>
+              <li>Smart home integration</li>
+              <li>Ceiling fan installation</li>
+              <li>Outlet &amp; switch upgrades</li>
+              <li>GFCI/AFCI protection</li>
+              <li>Home safety inspections</li>
+              <li>Hurricane preparedness</li>
+              <li>Pool &amp; spa electrical</li>
+            </ul>
+          </div>
+          
+          <div class="service-category" id="commercial">
+            <h3>🏢 Commercial</h3>
+            <ul>
+              <li>Tenant build-outs</li>
+              <li>Office &amp; retail lighting</li>
+              <li>Dedicated equipment circuits</li>
+              <li>Emergency &amp; exit lighting</li>
+              <li>Server room power</li>
+              <li>POS system wiring</li>
+              <li>Parking lot lighting</li>
+              <li>Signage electrical</li>
+              <li>Fire alarm systems</li>
+              <li>Preventive maintenance</li>
+              <li>Code compliance upgrades</li>
+              <li>Backup power systems</li>
+            </ul>
+          </div>
+          
+          <div class="service-category" id="marine">
+            <h3>⚓ Marine</h3>
+            <p class="service-note">"Tesla's first remote-control invention was a boat. We wire the ones that followed."</p>
+            <ul>
+              <li>Shore power systems</li>
+              <li>Dock pedestal installation</li>
+              <li>Onboard wiring &amp; panels</li>
+              <li>Marine-grade lighting</li>
+              <li>Battery &amp; charging systems</li>
+              <li>Navigation electronics</li>
+              <li>Corrosion prevention</li>
+              <li>Generator installation</li>
+            </ul>
+          </div>
+          
+          <div class="service-category" id="industrial">
+            <h3>🏭 Industrial</h3>
+            <p class="service-note">"This planet, with all its appalling immensity, is to electric currents virtually no more than a small metal ball." — Tesla, 1904</p>
+            <ul>
+              <li>Three-phase distribution</li>
+              <li>High-amperage circuits</li>
+              <li>MCC panel work</li>
+              <li>VFD wiring &amp; drives</li>
+              <li>Automation &amp; controls</li>
+              <li>Conveyor systems</li>
+              <li>Robotics power</li>
+              <li>Hazardous location wiring</li>
+              <li>Power distribution design</li>
+              <li>Predictive maintenance</li>
+            </ul>
+          </div>
+          
+        </div>
+        
+        <div class="services-cta">
+          <a href="#smartsubmit" class="btn btn-primary btn-lg">Get Your Estimate Now</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- SENIORS SECTION -->
+    <section class="seniors-section" id="seniors">
+      <div class="container">
+        <div class="seniors-inner">
+          <div class="seniors-content">
+            <div class="seniors-badge">Senior Discount Program</div>
+            <h2>Electrical Services for Seniors</h2>
+            <p>We take extra care to explain everything clearly and work with patience, respect, and safety front and center. Your comfort and understanding matter to us.</p>
+            <ul class="seniors-features">
+              <li>✓ Clear, patient explanations — no confusing jargon</li>
+              <li>✓ Written estimates before any work begins</li>
+              <li>✓ Clean, respectful work in your home</li>
+              <li>✓ Safety inspections &amp; honest recommendations</li>
+              <li>✓ Senior discount on all services</li>
+              <li>✓ Flexible scheduling that works for you</li>
+            </ul>
+            <a href="#smartsubmit" class="btn btn-primary">Request Senior Service</a>
+          </div>
+          <div class="seniors-services">
+            <h3>Popular Services for Seniors</h3>
+            <ul>
+              <li>Home safety inspections</li>
+              <li>Motion-sensor lighting</li>
+              <li>Outlet repairs &amp; upgrades</li>
+              <li>Panel checks &amp; labeling</li>
+              <li>Emergency backup lighting</li>
+              <li>Accessible outlet placement</li>
+              <li>Night light installation</li>
+              <li>Smoke/CO detector upgrades</li>
+              <li>Whole-home surge protection</li>
+              <li>Generator consultation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Clients Say</h2>
+          <p>Trusted by homeowners, businesses, and property managers across Southwest Florida</p>
+        </div>
+        <div class="testimonial-grid">
+          
+          <article class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"Michael is the only electrician I trust with my home. He explained everything clearly, showed up exactly when he said he would, and left the work area cleaner than he found it. The panel upgrade was flawless — passed inspection the first time."</blockquote>
+            <div class="testimonial-author">
+              <strong>— Susan M.</strong>
+              <span>Homeowner, Sarasota</span>
+            </div>
+          </article>
+          
+          <article class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"We needed emergency electrical work after a storm took out half our circuits. BES responded within two hours on a Sunday evening. Professional, fast, and fair pricing. They've been our go-to for every property since."</blockquote>
+            <div class="testimonial-author">
+              <strong>— Robert K.</strong>
+              <span>Property Manager, Venice</span>
+            </div>
+          </article>
+          
+          <article class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"As a general contractor, I need electricians who communicate, stay on schedule, and pass inspection without callbacks. Badolato Electrical delivers every time. They're my first call on every new project."</blockquote>
+            <div class="testimonial-author">
+              <strong>— James T.</strong>
+              <span>General Contractor, Charlotte County</span>
+            </div>
+          </article>
+          
+          <article class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"I'm 78 years old and most contractors talk over my head or try to sell me things I don't need. Michael was patient, respectful, and gave me an honest assessment. He even noticed a safety issue the last electrician missed. Highly recommend for seniors."</blockquote>
+            <div class="testimonial-author">
+              <strong>— Dorothy L.</strong>
+              <span>Homeowner, North Port</span>
+            </div>
+          </article>
+          
+          <article class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"BES rewired our entire marina dock system. Shore power, pedestals, lighting — all done to code with zero downtime for our tenants. Their knowledge of marine electrical requirements saved us from costly mistakes."</blockquote>
+            <div class="testimonial-author">
+              <strong>— Captain Mike D.</strong>
+              <span>Marina Manager, Englewood</span>
+            </div>
+          </article>
+          
+          <article class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"Outstanding work on our restaurant build-out. All the dedicated circuits for our kitchen equipment, POS systems, and emergency lighting — done ahead of schedule. They even coordinated perfectly with our other trades."</blockquote>
+            <div class="testimonial-author">
+              <strong>— Maria G.</strong>
+              <span>Restaurant Owner, Sarasota</span>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / FOUNDER -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-image">
+            <div class="about-image-placeholder">
+              <span>Michael Badolato<br>Founder &amp; Electrician<br><br>[Photo Coming Soon]</span>
+            </div>
+          </div>
+          <div class="about-content">
+            <h2>About Badolato Electrical Services</h2>
+            
+            <p><strong>Badolato Electrical Services ("BES")</strong> is a bonded and insured electrical services company serving homeowners, seniors, commercial businesses, property managers, marine facilities, and industrial operations across Southwest Florida.</p>
+            
+            <p>Founded by Michael Badolato, BES represents the newest chapter in a family legacy of entrepreneurship. Michael is a third-generation Venice and Sarasota area business owner, carrying forward a tradition of community commitment, integrity, and hands-on craftsmanship that has defined the Badolato name for decades.</p>
+            
+            <p>His path to the electrical trade began with a fascination with Nikola Tesla's groundbreaking work in alternating current and power transmission — a curiosity that evolved into apprenticeship, journeyman training, and over 8 years of hands-on experience.</p>
+            
+            <p>Today, Michael brings that same precision and respect for the craft to every project BES undertakes. Whether it's a ceiling fan installation for a senior citizen or a complete panel upgrade for a commercial property, every job receives the same level of attention, documentation, and code-compliant execution.</p>
+            
+            <!-- LICENSE DISCLOSURE BOX -->
+            <div class="license-disclosure-box">
+              <h4>📋 Licensing Disclosure</h4>
+              <p>All electrical work is performed under Florida Certified Electrical Contractor License <strong>#EC-XXXXXX</strong> held by <strong>[QUALIFYING CONTRACTOR NAME]</strong>, in accordance with Florida Statute Chapter 489. Michael Badolato operates as a qualified electrician under this license, ensuring all work is properly supervised, permitted, and inspected.</p>
+              <p class="disclosure-note">This arrangement is standard in Florida's electrical industry and ensures full regulatory compliance and consumer protection.</p>
+            </div>
+            
+            <div class="about-highlights">
+              <div class="highlight">
+                <strong>Service Area</strong>
+                <span>Sarasota, Manatee &amp; Charlotte Counties</span>
+              </div>
+              <div class="highlight">
+                <strong>Statewide</strong>
+                <span>Selected industrial &amp; commercial projects</span>
+              </div>
+              <div class="highlight">
+                <strong>Emergency</strong>
+                <span>24/7 response available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE TESLA CONNECTION / LEGACY -->
+    <section class="tesla-section" id="tesla">
+      <div class="container">
+        <div class="tesla-inner">
+          <div class="tesla-content">
+            <h2>The Tesla Connection</h2>
+            <p class="tesla-intro">Why does an electrical company in Southwest Florida invoke the name of a 19th-century inventor? Because the principles matter.</p>
+            
+            <p>Nikola Tesla was born during a lightning storm in 1856. His mother called him "a child of light." He went on to invent the alternating current system that powers every home and business in the world today. He championed precision over shortcuts, innovation over convention, and work that outlasts the worker.</p>
+            
+            <p>Michael Badolato discovered Nikola Tesla's story as a teenager — and that spark never faded. The same curiosity that drove Nikola Tesla to understand the nature of electricity drives BES to understand your electrical system completely before we touch a single wire.</p>
+            
+            <p>We don't just fix problems. We engineer solutions. We don't just meet code. We exceed it. We don't just finish jobs. We build relationships.</p>
+            
+            <p>That's the standard Nikola Tesla set. That's the BES promise.</p>
+            
+            <div class="tesla-quote">
+              <blockquote>
+                "Let the future tell the truth and evaluate each one according to his work and accomplishments. The present is theirs; the future, for which I really worked, is mine."
+                <cite>— Nikola Tesla, Politika, 1927</cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="tesla-image">
+            <div class="tesla-image-placeholder">
+              <span>Nikola Tesla<br>Coil Imagery<br><br>[Image Coming Soon]</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- TESLA TIMELINE -->
+        <div class="tesla-timeline">
+          <h3>Nikola Tesla: A Life That Changed the World</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">1856</div>
+              <div class="timeline-content">
+                <h4>Born in a Lightning Storm</h4>
+                <p>July 10, Smiljan, Croatia. The midwife said "He'll be a child of the storm." His mother replied: "No. Of light."</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1884</div>
+              <div class="timeline-content">
+                <h4>Arrives in America</h4>
+                <p>Tesla arrives in New York City with 4 cents in his pocket and a letter of introduction to Thomas Edison.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1888</div>
+              <div class="timeline-content">
+                <h4>AC Motor Patent</h4>
+                <p>Patents the polyphase alternating current motor — the foundation of modern electrical power distribution.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1891</div>
+              <div class="timeline-content">
+                <h4>Tesla Coil Invented</h4>
+                <p>Invents the Tesla coil, enabling wireless transmission of electrical energy — still used in radio technology today.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1893</div>
+              <div class="timeline-content">
+                <h4>World's Columbian Exposition</h4>
+                <p>AC power lights 160,000 bulbs at the Chicago World's Fair — proving AC's superiority over Edison's DC.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1895</div>
+              <div class="timeline-content">
+                <h4>Niagara Falls Power Plant</h4>
+                <p>Tesla's AC system harnesses Niagara Falls, transmitting power to Buffalo, NY — the first major AC power project.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1898</div>
+              <div class="timeline-content">
+                <h4>Remote Control Boat</h4>
+                <p>Demonstrates the first radio-controlled boat at Madison Square Garden — inventing remote control technology.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1943</div>
+              <div class="timeline-content">
+                <h4>Legacy Secured</h4>
+                <p>Tesla passes away in New York. His AC system powers the world. The unit of magnetic flux density is named the "Tesla" in his honor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- DOCUMENTARY -->
+        <div class="tesla-documentary">
+          <h3>Watch: The Life of Nikola Tesla</h3>
+          <p>Explore the genius who gave us the electrical age in this PBS American Experience documentary.</p>
+          <div class="video-container">
+            <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/pPnGvjmIqPQ" 
+              title="Tesla - PBS American Experience Documentary" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="video-note">Also available on <a href="https://www.pbs.org/wgbh/americanexperience/films/tesla/" target="_blank" rel="noopener">PBS.org</a> and <a href="https://www.netflix.com/title/80991257" target="_blank" rel="noopener">Netflix</a>.</p>
+        </div>
+        
+        <!-- TESLA QUOTES COLLECTION -->
+        <div class="tesla-quotes-collection">
+          <h3>Words from the Master</h3>
+          <div class="quotes-grid">
+            <div class="quote-card">
+              <blockquote>"The scientific man does not aim at an immediate result. His duty is to lay the foundation for those who are to come, and point the way."</blockquote>
+            </div>
+            <div class="quote-card">
+              <blockquote>"Of all the frictional resistances, the one that most retards human movement is ignorance."</blockquote>
+              <cite>— The Problem of Increasing Human Energy, 1900</cite>
+            </div>
+            <div class="quote-card">
+              <blockquote>"The mind is sharper and keener in seclusion and uninterrupted solitude. Be alone, that is the secret of invention; be alone, that is when ideas are born."</blockquote>
+              <cite>— New York Times, 1934</cite>
+            </div>
+            <div class="quote-card">
+              <blockquote>"All my money has been invested into experiments with which I have made new discoveries enabling mankind to have a little easier life."</blockquote>
+              <cite>— Politika, 1927</cite>
+            </div>
+            <div class="quote-card">
+              <blockquote>"Though free to think and act, we are held together, like the stars in the firmament, with ties inseparable. We are all one."</blockquote>
+              <cite>— The Problem of Increasing Human Energy, 1900</cite>
+            </div>
+            <div class="quote-card">
+              <blockquote>"Ere long intelligence — transmitted without wires — will throb through the earth like a pulse through a living organism."</blockquote>
+              <cite>— 1893 Lecture</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES SECTION -->
+    <section class="resources-section" id="resources">
+      <div class="container">
+        <div class="section-header">
+          <h2>Electrical Resources</h2>
+          <p>Knowledge, tools, and organizations to help you stay informed and safe</p>
+        </div>
+        
+        <!-- Resource Navigation -->
+        <div class="resource-nav">
+          <a href="#resource-orgs" class="resource-nav-item active">Professional Organizations</a>
+          <a href="#resource-florida" class="resource-nav-item">Florida Licensing</a>
+          <a href="#resource-energy" class="resource-nav-item">Energy Tools</a>
+          <a href="#resource-safety" class="resource-nav-item">Safety Tips</a>
+          <a href="#resource-tesla" class="resource-nav-item">Tesla Archives</a>
+        </div>
+        
+        <!-- Professional Organizations -->
+        <div class="resource-block" id="resource-orgs">
+          <h3>⚡ Professional Organizations</h3>
+          <p>Industry associations setting standards, providing training, and advocating for electrical safety.</p>
+          
+          <div class="resource-cards">
+            <div class="resource-card">
+              <h4>NECA</h4>
+              <p class="resource-subtitle">National Electrical Contractors Association</p>
+              <p>The voice of the $225 billion electrical construction industry. Establishes standards, provides education, and represents electrical contractors nationwide since 1901.</p>
+              <a href="https://www.necanet.org/" target="_blank" rel="noopener" class="resource-link">Visit NECA →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>IBEW</h4>
+              <p class="resource-subtitle">International Brotherhood of Electrical Workers</p>
+              <p>The world's largest electrical union, founded in 1891. Represents 750,000+ electricians across the US and Canada, setting training standards for the trade.</p>
+              <a href="https://www.ibew.org/" target="_blank" rel="noopener" class="resource-link">Visit IBEW →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>NFPA</h4>
+              <p class="resource-subtitle">National Fire Protection Association</p>
+              <p>Publisher of the National Electrical Code (NEC) — the standard for safe electrical installation in the United States. Updated every 3 years.</p>
+              <a href="https://www.nfpa.org/" target="_blank" rel="noopener" class="resource-link">Visit NFPA →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>ESFI</h4>
+              <p class="resource-subtitle">Electrical Safety Foundation International</p>
+              <p>Non-profit dedicated to reducing electrically-related deaths, injuries, and property loss. Offers free safety resources for homeowners and businesses.</p>
+              <a href="https://www.esfi.org/" target="_blank" rel="noopener" class="resource-link">Visit ESFI →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>IEC</h4>
+              <p class="resource-subtitle">Independent Electrical Contractors</p>
+              <p>Trade association for merit-shop electrical contractors. Provides training, advocacy, and business resources for independent contractors.</p>
+              <a href="https://www.ieci.org/" target="_blank" rel="noopener" class="resource-link">Visit IEC →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>Electrical Training Alliance</h4>
+              <p class="resource-subtitle">IBEW/NECA Apprenticeship Program</p>
+              <p>The largest electrical apprenticeship program in the US. Has trained over 350,000 apprentices to journeyman status through local programs.</p>
+              <a href="https://www.electricaltrainingalliance.org/" target="_blank" rel="noopener" class="resource-link">Visit Alliance →</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Florida Licensing -->
+        <div class="resource-block" id="resource-florida">
+          <h3>🌴 Florida Licensing &amp; Verification</h3>
+          <p>Verify contractor licenses and access Florida electrical regulations.</p>
+          
+          <div class="resource-cards">
+            <div class="resource-card resource-card-highlight">
+              <h4>Verify a Contractor License</h4>
+              <p class="resource-subtitle">Florida DBPR License Search</p>
+              <p>Always verify your contractor is licensed before hiring. Search by name or license number to confirm credentials, status, and any disciplinary history.</p>
+              <a href="https://www.myfloridalicense.com/wl11.asp" target="_blank" rel="noopener" class="resource-link">Search Licenses →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>Electrical Contractors' Licensing Board</h4>
+              <p class="resource-subtitle">Florida DBPR</p>
+              <p>Official board regulating electrical contractors in Florida. Licensing requirements, continuing education, and regulatory information.</p>
+              <a href="https://www2.myfloridalicense.com/electrical-contractors/" target="_blank" rel="noopener" class="resource-link">Visit ECLB →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>Florida Statutes Chapter 489</h4>
+              <p class="resource-subtitle">Electrical Contractor Laws</p>
+              <p>The official Florida law governing electrical contractor licensing, requirements, and disciplinary procedures.</p>
+              <a href="http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0489/0489ContentsIndex.html" target="_blank" rel="noopener" class="resource-link">Read Statutes →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>Sarasota County Building Services</h4>
+              <p class="resource-subtitle">Local Permits &amp; Inspections</p>
+              <p>Information on building permits, inspections, and local electrical code requirements for Sarasota County.</p>
+              <a href="https://www.scgov.net/government/planning-and-development-services/building-services" target="_blank" rel="noopener" class="resource-link">Sarasota County →</a>
+            </div>
+          </div>
+          
+          <!-- LICENSE VERIFICATION BOX -->
+          <div class="license-verification-box">
+            <h4>🔍 BES Licensing Information</h4>
+            <p>Badolato Electrical Services performs all electrical work under Florida Certified Electrical Contractor License:</p>
+            <div class="license-details">
+              <p><strong>License Number:</strong> EC-XXXXXX</p>
+              <p><strong>License Holder:</strong> [QUALIFYING CONTRACTOR NAME]</p>
+              <p><strong>Status:</strong> Active &amp; In Good Standing</p>
+            </div>
+            <p class="license-note">Per Florida Statute §489.119, this license number appears on all bids, proposals, contracts, and advertising. Michael Badolato operates as a qualified electrician under this license with full supervision and compliance with state regulations.</p>
+            <p><strong>Service Area:</strong> Sarasota, Manatee &amp; Charlotte Counties</p>
+            <p><strong>Coverage:</strong> Fully Bonded &amp; Insured</p>
+            <a href="https://www.myfloridalicense.com/wl11.asp" target="_blank" rel="noopener" class="btn btn-secondary">Verify License on DBPR →</a>
+          </div>
+        </div>
+        
+        <!-- Energy Tools -->
+        <div class="resource-block" id="resource-energy">
+          <h3>💡 Energy Calculators &amp; Tools</h3>
+          <p>Free tools to understand your energy usage and find ways to save.</p>
+          
+          <div class="resource-cards">
+            <div class="resource-card">
+              <h4>FPL Energy Manager</h4>
+              <p class="resource-subtitle">Florida Power &amp; Light</p>
+              <p>Monitor, analyze, and simulate your energy use. Get personalized tips based on your actual usage patterns and find savings opportunities.</p>
+              <a href="https://www.fpl.com/landing/energy-manager.html" target="_blank" rel="noopener" class="resource-link">Launch Tool →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>Duke Energy Home Energy Check</h4>
+              <p class="resource-subtitle">Free Energy Assessment</p>
+              <p>Schedule a free in-home or phone energy evaluation. Get personalized recommendations and qualify for rebates on energy-efficient upgrades.</p>
+              <a href="https://www.duke-energy.com/home/products/home-energy-check" target="_blank" rel="noopener" class="resource-link">Schedule Check →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>Sarasota County DIY Energy Kits</h4>
+              <p class="resource-subtitle">Free Library Resource</p>
+              <p>Borrow a Home Energy Evaluation Kit from Sarasota County Libraries. Includes tools and step-by-step guide for analyzing your energy use.</p>
+              <a href="https://greenlivingtoolkit.org/energy-conservation/do-a-home-energy-assessment/" target="_blank" rel="noopener" class="resource-link">Learn More →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>ENERGY STAR Products</h4>
+              <p class="resource-subtitle">EPA Energy Efficiency</p>
+              <p>Find certified energy-efficient appliances, lighting, and electronics. Use 10-50% less energy than standard products.</p>
+              <a href="https://www.energystar.gov/" target="_blank" rel="noopener" class="resource-link">Find Products →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>Solar Net Metering (FPL)</h4>
+              <p class="resource-subtitle">Solar Power Credits</p>
+              <p>Learn how Florida's net metering program lets you earn credits for excess solar energy you generate.</p>
+              <a href="https://www.fpl.com/energy/net-metering.html" target="_blank" rel="noopener" class="resource-link">Learn About Solar →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>EV Charger Guide</h4>
+              <p class="resource-subtitle">Electric Vehicle Charging</p>
+              <p>Planning to add an EV charger? Learn about Level 1 vs Level 2 charging, electrical requirements, and installation considerations.</p>
+              <a href="https://www.energy.gov/eere/electricvehicles/charging-home" target="_blank" rel="noopener" class="resource-link">EV Charging Info →</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Safety Tips -->
+        <div class="resource-block" id="resource-safety">
+          <h3>🛡️ Electrical Safety Tips</h3>
+          <p>Essential safety information for homeowners and renters.</p>
+          
+          <div class="safety-tips-grid">
+            <div class="safety-tip">
+              <h4>⚠️ Warning Signs to Watch</h4>
+              <ul>
+                <li>Circuit breakers that frequently trip</li>
+                <li>Flickering or dimming lights</li>
+                <li>Burning smell from outlets or switches</li>
+                <li>Discolored or warm outlet covers</li>
+                <li>Sparks when plugging in devices</li>
+                <li>Buzzing sounds from electrical panel</li>
+                <li>Mild shocks when touching appliances</li>
+              </ul>
+              <p class="safety-tip-action">If you notice any of these, call a licensed electrician immediately.</p>
+            </div>
+            
+            <div class="safety-tip">
+              <h4>🏠 Home Safety Basics</h4>
+              <ul>
+                <li>Test GFCI outlets monthly (push the TEST button)</li>
+                <li>Never overload outlets or power strips</li>
+                <li>Keep electrical devices away from water</li>
+                <li>Use proper wattage bulbs for fixtures</li>
+                <li>Don't run cords under rugs or furniture</li>
+                <li>Replace damaged or frayed cords immediately</li>
+                <li>Install tamper-resistant outlets for child safety</li>
+              </ul>
+            </div>
+            
+            <div class="safety-tip">
+              <h4>🌀 Hurricane Season Prep</h4>
+              <ul>
+                <li>Know where your main electrical panel is located</li>
+                <li>Learn how to safely shut off power if needed</li>
+                <li>Never run generators indoors or in garages</li>
+                <li>Don't touch downed power lines — assume they're live</li>
+                <li>Have flashlights with fresh batteries ready</li>
+                <li>Consider whole-home surge protection</li>
+                <li>Have generator safely installed by a licensed electrician</li>
+              </ul>
+            </div>
+            
+            <div class="safety-tip">
+              <h4>🔌 Extension Cord Safety</h4>
+              <ul>
+                <li>Use extension cords only temporarily</li>
+                <li>Match cord rating to device power needs</li>
+                <li>Never daisy-chain multiple cords</li>
+                <li>Don't run cords through walls or ceilings</li>
+                <li>Unplug cords by pulling the plug, not the cord</li>
+                <li>Check for UL or CSA certification</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="safety-resources-box">
+            <h4>📚 Free Safety Resources from ESFI</h4>
+            <p>The Electrical Safety Foundation offers free downloadable checklists, videos, and educational materials.</p>
+            <div class="safety-links">
+              <a href="https://www.esfi.org/home-safety/electrical-safety/" target="_blank" rel="noopener">Home Safety Checklists</a>
+              <a href="https://www.esfi.org/electrical-safety-videos/" target="_blank" rel="noopener">Safety Videos</a>
+              <a href="https://www.esfi.org/home-electrical-safety-challenge-2/" target="_blank" rel="noopener">Safety Challenge</a>
+              <a href="https://www.esfi.org/do-it-yourself-diy-electrical-safety/" target="_blank" rel="noopener">DIY Safety Tips</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tesla Archives -->
+        <div class="resource-block" id="resource-tesla">
+          <h3>📜 Nikola Tesla Archives &amp; Resources</h3>
+          <p>Explore the writings, patents, and history of the man who electrified the world.</p>
+          
+          <div class="resource-cards">
+            <div class="resource-card">
+              <h4>Nikola Tesla Museum</h4>
+              <p class="resource-subtitle">Belgrade, Serbia</p>
+              <p>The official museum holding Tesla's original manuscripts, patents, and personal belongings. Digital archives available online.</p>
+              <a href="https://nikolateslamuseum.org/" target="_blank" rel="noopener" class="resource-link">Visit Museum →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>Tesla Science Center at Wardenclyffe</h4>
+              <p class="resource-subtitle">Shoreham, New York</p>
+              <p>Located at Tesla's original laboratory site. Working to restore and preserve Tesla's last remaining lab.</p>
+              <a href="https://teslasciencecenter.org/" target="_blank" rel="noopener" class="resource-link">Visit Center →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>Tesla's Writings on Project Gutenberg</h4>
+              <p class="resource-subtitle">Free E-Books</p>
+              <p>Free downloads of Tesla's compiled writings, including "The Inventions, Researches and Writings of Nikola Tesla."</p>
+              <a href="https://www.gutenberg.org/ebooks/author/5067" target="_blank" rel="noopener" class="resource-link">Read Free →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>My Inventions: Autobiography</h4>
+              <p class="resource-subtitle">Tesla's Own Words</p>
+              <p>Tesla's only autobiographical work, originally serialized in 1919. Details his early life, inventions, and philosophies.</p>
+              <a href="https://www.gutenberg.org/ebooks/64317" target="_blank" rel="noopener" class="resource-link">Read Autobiography →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>Internet Archive: Tesla Papers</h4>
+              <p class="resource-subtitle">Historical Documents</p>
+              <p>Extensive digital collection of Tesla's papers, photographs, and historical documents.</p>
+              <a href="https://archive.org/search?query=nikola+tesla" target="_blank" rel="noopener" class="resource-link">Browse Archive →</a>
+            </div>
+            
+            <div class="resource-card">
+              <h4>PBS: Tesla Documentary</h4>
+              <p class="resource-subtitle">American Experience</p>
+              <p>Comprehensive 2016 documentary exploring Tesla's genius, inventions, and complex legacy.</p>
+              <a href="https://www.pbs.org/wgbh/americanexperience/films/tesla/" target="_blank" rel="noopener" class="resource-link">Watch on PBS →</a>
+            </div>
+          </div>
+          
+          <div class="tesla-books-box">
+            <h4>📖 Recommended Reading</h4>
+            <ul>
+              <li><strong>"My Inventions"</strong> — Nikola Tesla (1919) — Tesla's autobiography</li>
+              <li><strong>"Tesla: Man Out of Time"</strong> — Margaret Cheney — Definitive biography</li>
+              <li><strong>"Wizard: The Life and Times of Nikola Tesla"</strong> — Marc Seifer</li>
+              <li><strong>"The Problem of Increasing Human Energy"</strong> — Tesla, Century Magazine, 1900</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- CONTRACTORS SECTION -->
+    <section class="contractors-section" id="contractors">
+      <div class="container">
+        <div class="contractors-inner">
+          <div class="contractors-content">
+            <h2>Contractors &amp; Property Managers</h2>
+            <p>From build-outs to turnovers, you need electricians who show up, communicate, and finish on schedule. BES is your reliable electrical partner.</p>
+            <ul>
+              <li>Project-based electrical work</li>
+              <li>Turnover &amp; renovation support</li>
+              <li>Inspection-ready installations</li>
+              <li>SmartSubmit™ for tenant requests</li>
+              <li>Multi-unit maintenance programs</li>
+              <li>Priority scheduling for partners</li>
+              <li>Full documentation &amp; photos</li>
+              <li>Ongoing service agreements</li>
+            </ul>
+            <a href="#smartsubmit" class="btn btn-primary">Partner With BES</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SMARTSUBMIT -->
+    <section class="smartsubmit" id="smartsubmit">
+      <div class="container">
+        <div class="smartsubmit-inner">
+          <div class="smartsubmit-content">
+            <div class="smartsubmit-badge">Fastest Way to an Estimate</div>
+            <h2>SmartSubmit™</h2>
+            <p class="smartsubmit-tagline">Show Us the Problem. Get a Fast Answer.</p>
+            <p>Skip the phone tag and scheduling delays. Upload photos, video, or a voice description of your electrical issue directly from your phone. Our technician reviews your submission and responds with a clear estimate — no unnecessary site visits, no wasted time.</p>
+            
+            <div class="smartsubmit-steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>Capture</h4>
+                  <p>Take photos or video of the issue. Record a voice note describing what's happening.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>Submit</h4>
+                  <p>Upload your files with your contact info using the form. It takes less than 2 minutes.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>Receive</h4>
+                  <p>Get a clear estimate via text or email — often within hours, not days.</p>
+                </div>
+              </div>
+            </div>
+            
+            <p class="smartsubmit-note">Perfect for busy homeowners, property managers with multiple units, and seniors who prefer to show rather than describe.</p>
+            
+            <!-- Tesla Quote for SmartSubmit -->
+            <div class="smartsubmit-tesla-quote">
+              <blockquote>
+                "As soon as it is completed, it will be possible for a business man in New York to dictate instructions, and have them instantly appear in type at his office in London or elsewhere."
+                <cite>— Tesla predicting instant communication, 1908</cite>
+              </blockquote>
+            </div>
+            
+          </div>
+          <div class="smartsubmit-form-container">
+            <form class="smartsubmit-form" id="smartsubmit-form">
+              <h3>Start Your SmartSubmit™</h3>
+              
+              <div class="form-group">
+                <label for="ss-name">Name *</label>
+                <input type="text" id="ss-name" name="name" required placeholder="Your full name" />
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ss-phone">Phone *</label>
+                  <input type="tel" id="ss-phone" name="phone" required placeholder="(941) 555-1234" />
+                </div>
+                <div class="form-group">
+                  <label for="ss-email">Email</label>
+                  <input type="email" id="ss-email" name="email" placeholder="you@email.com" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="ss-type">I am a... *</label>
+                <select id="ss-type" name="customer_type" required>
+                  <option value="">Select one</option>
+                  <option value="homeowner">Homeowner</option>
+                  <option value="senior">Senior (65+) — Discount Available</option>
+                  <option value="business">Business Owner</option>
+                  <option value="property-manager">Property Manager</option>
+                  <option value="contractor">Contractor</option>
+                  <option value="marine">Marina / Boat Owner</option>
+                  <option value="industrial">Industrial Facility</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="ss-description">Describe the Issue *</label>
+                <textarea id="ss-description" name="description" required rows="4" placeholder="Tell us what's happening with your electrical system..."></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="ss-files">Upload Photos / Video / Voice Note</label>
+                <div class="file-upload">
+                  <input type="file" id="ss-files" name="files" multiple accept="image/*,video/*,audio/*" />
+                  <div class="file-upload-text">
+                    <span class="file-upload-icon">📁</span>
+                    <span>Tap to upload photos, video, or voice recording</span>
+                    <small>Show us the panel, the outlet, the issue — whatever helps</small>
+                  </div>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Submit for Estimate</button>
+              <p class="form-note">We typically respond within a few hours during business days.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREA -->
+    <section class="service-area">
+      <div class="container">
+        <h2>Serving Southwest Florida</h2>
+        <p class="service-area-counties"><strong>Sarasota County</strong> • <strong>Manatee County</strong> • <strong>Charlotte County</strong></p>
+        <p>Plus selected industrial and commercial projects throughout Florida.</p>
+        <div class="emergency-callout">
+          <div class="emergency-icon">🚨</div>
+          <div class="emergency-content">
+            <h3>Electrical Emergency?</h3>
+            <p>Burning smells, sparking outlets, tripped main breakers, partial power loss, or storm damage? Don't wait — call our 24/7 emergency line immediately.</p>
+            <a href="tel:9413008658" class="btn btn-primary">Call 941-300-VOLT Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-info">
+            <h2>Contact BES</h2>
+            <p>Have a question, need a quote, or want to schedule service? Reach out today — we're here to help.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <strong>Phone</strong>
+                <a href="tel:9413008658">941-300-VOLT (8658)</a>
+              </div>
+              <div class="contact-item">
+                <strong>Address</strong>
+                <span>1678 Nell Road<br>North Port, FL 34288</span>
+              </div>
+              <div class="contact-item">
+                <strong>Service Area</strong>
+                <span>Sarasota, Manatee &amp; Charlotte Counties</span>
+              </div>
+              <div class="contact-item">
+                <strong>Emergency</strong>
+                <span>24/7 Available — Call Anytime</span>
+              </div>
+            </div>
+            
+            <div class="contact-license">
+              <p><strong>Bonded • Insured • Professionally Licensed</strong></p>
+              <p class="license-disclosure-small">FL Electrical Contractor License #EC-XXXXXX</p>
+              <p>Locally rooted. Professionally driven.</p>
+            </div>
+          </div>
+          
+          <form class="contact-form" id="contact-form">
+            <h3>Send a Message</h3>
+            
+            <div class="form-group">
+              <label for="contact-name">Name *</label>
+              <input type="text" id="contact-name" name="name" required />
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-phone">Phone *</label>
+                <input type="tel" id="contact-phone" name="phone" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" />
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-message">Message *</label>
+              <textarea id="contact-message" name="message" rows="4" required placeholder="How can we help you?"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- ========================================
-       FOOTER (Compact)
-  ======================================== -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
-        
         <div class="footer-brand">
-          <h3>Badolato Electrical Services</h3>
-          <p>Bonded • Insured • Professionally Licensed</p>
-          <p>"The present is theirs; the future is mine." — Tesla</p>
+          <div class="footer-logo">BADOLATO</div>
+          <div class="footer-tagline-small">ELECTRICAL SERVICES</div>
+          <p class="footer-tagline">Bonded. Insured. Professionally Licensed.<br>Locally rooted. Professionally driven.</p>
+          <p class="footer-quote">"The present is theirs; the future, for which I really worked, is mine." — Nikola Tesla</p>
         </div>
         
         <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tesla">Tesla Legacy</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#smartsubmit">SmartSubmit™</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-services">
           <h4>Services</h4>
           <ul>
-            <li><a href="residential.html">Residential</a></li>
-            <li><a href="seniors.html">Seniors</a></li>
-            <li><a href="commercial.html">Commercial</a></li>
-            <li><a href="industrial.html">Industrial</a></li>
-            <li><a href="marine.html">Marine</a></li>
-            <li><a href="contractors.html">Property Managers</a></li>
+            <li><a href="#residential">Residential</a></li>
+            <li><a href="#commercial">Commercial</a></li>
+            <li><a href="#marine">Marine</a></li>
+            <li><a href="#industrial">Industrial</a></li>
+            <li><a href="#seniors">Seniors</a></li>
+            <li><a href="#contractors">Contractors</a></li>
           </ul>
         </div>
         
         <div class="footer-contact">
           <h4>Contact</h4>
           <p><a href="tel:9413008658"><strong>941-300-VOLT</strong></a></p>
-          <p>Sarasota, Manatee & Charlotte Counties</p>
-          <p>24/7 Emergency Available</p>
+          <p>1678 Nell Road<br>North Port, FL 34288</p>
+          <p>Serving Sarasota, Manatee<br>&amp; Charlotte Counties</p>
+          <p class="footer-emergency">24/7 Emergency Available</p>
         </div>
-        
+      </div>
+      
+      <!-- LICENSE DISCLOSURE IN FOOTER -->
+      <div class="footer-license-disclosure">
+        <p>All electrical work performed under Florida Certified Electrical Contractor License #EC-XXXXXX held by [QUALIFYING CONTRACTOR NAME]. Michael Badolato operates as a qualified electrician under this license pursuant to Florida Statute Chapter 489.</p>
       </div>
       
       <div class="footer-bottom">
         <p>© 2025 Badolato Electrical Services. All rights reserved.</p>
-        <p class="footer-license">FL Electrical Contractor License #EC-XXXXXX</p>
+        <p class="footer-attribution">Inspired by the legacy of Nikola Tesla (1856-1943)</p>
       </div>
     </div>
   </footer>
 
+  <!-- v1.4 Enhanced Script (External File) -->
   <script src="script.js"></script>
+
 </body>
 </html>

@@ -1,114 +1,73 @@
 ================================================================================
-BES WEBSITE v2.0 - MULTI-PAGE ARCHITECTURE
+BADOLATO ELECTRICAL SERVICES - WEBSITE v2.1
 ================================================================================
+Project: BES
+Build Date: 15-Jan-2026
+Version: 2.1 (Corrected Multi-Page Architecture)
 
-Project: BES - Badolato Electrical Services
-Date: 15-Jan-2025
-Version: 2.0 (Multi-Page Site)
+FIXES FROM v2.0:
+----------------
+✓ ALL CONTENT PRESERVED from v1.4 (Testimonials, About, Tesla Section, 
+  Resources, Oath, Seniors, Services, SmartSubmit, Contact, Footer)
+✓ Tagline bar: WHITE text on BLUE background (same blue as header)
+✓ Phone button: Gold gradient style (no emoji)
+✓ Menu bar fonts: Same size (0.875rem) on both bars
+✓ Menu bar colors: Same style as v1.4 (light backgrounds, blue on hover)
+✓ Nav order: Utility items (Home, About, etc.) on TOP, Industries on BOTTOM
 
-================================================================================
-FILE LIST
-================================================================================
+NEW HEADER STRUCTURE:
+--------------------
+1. Main Header Bar (120px) - Dark blue gradient
+   - LEFT: Tesla portrait (links to SmartSubmit)
+   - CENTER: Banner logo placeholder
+   - RIGHT: Gold phone button "941-300-VOLT"
 
-PAGES:
-index.html          - Homepage (short hub page)
-residential.html    - Residential services page
-seniors.html        - Senior services page
-commercial.html     - Commercial services page
-industrial.html     - Industrial services page
-marine.html         - Marine services page
-contractors.html    - Property managers page
+2. Tagline Bar (44px) - Same blue, WHITE text
+   - Rotating taglines every 4 seconds
+   
+3. Nav Bar 1 - UTILITY (TOP) - White background
+   Home | About | Tesla Legacy | Resources | SmartSubmit™ | Contact
+   
+4. Nav Bar 2 - INDUSTRIES (BOTTOM) - Gray background
+   Residential | Seniors | Commercial | Industrial | Marine | Property Managers
 
-ASSETS:
-styles.css          - Master stylesheet (all pages)
-script.js           - JavaScript (rotating taglines, forms)
-logo.svg            - Current logo (placeholder for new banner)
+HOMEPAGE CONTENT (ALL PRESERVED):
+--------------------------------
+- Hero section with badges, CTAs, Tesla quote
+- Trust bar (8+ Years, 3rd Gen, 24/7, 100% Code, 3 Counties)
+- Who We Serve (6 segments)
+- The Oath
+- Services Overview (4 categories)
+- Seniors Section (with discount badge)
+- Testimonials (6 reviews)
+- About / Founder (with license disclosure)
+- Tesla Legacy (timeline, documentary, quotes collection)
+- Resources (5 categories with external links)
+- Contractors section
+- SmartSubmit form
+- Service Area (with emergency callout)
+- Contact section
+- Full footer
 
-FOLDERS TO CREATE:
-images/             - Create and add hero images for each industry
+FILES INCLUDED:
+--------------
+- index.html (1154+ lines - FULL homepage with all content)
+- styles.css (v1.4 styles + v2.1 header additions)
+- script.js (tagline rotation + all v1.4 functionality)
+- logo.svg (placeholder)
+- images/ (empty folder for hero images)
 
-================================================================================
-PLACEHOLDERS TO REPLACE
-================================================================================
+PLACEHOLDERS TO REPLACE:
+-----------------------
+1. Tesla portrait in header (gray box) → Upload Tesla image
+2. Banner logo (dashed box) → Upload Midjourney banner logo
+3. Hero image placeholder → Upload Tesla coil or work photo
+4. About image placeholder → Upload Michael Badolato photo
+5. Tesla section image → Upload Tesla imagery
 
-1. TESLA PORTRAIT (top-left header)
-   - Current: Gray box with "Tesla Portrait" text
-   - Replace: Upload real Tesla image
+DEPLOYMENT:
+----------
+1. Upload to GitHub repo
+2. Vercel auto-deploys on push
 
-2. BANNER LOGO (center header)
-   - Current: "BADOLATO ELECTRICAL" text placeholder
-   - Replace: Midjourney banner logo when ready
-
-3. HERO IMAGES (each industry page)
-   - Create folder: /images/
-   - Add files:
-     • hero-residential.jpg
-     • hero-seniors.jpg
-     • hero-commercial.jpg
-     • hero-industrial.jpg
-     • hero-marine.jpg
-     • hero-contractors.jpg
-
-4. ROTATING TAGLINES (index.html)
-   - Current: 4 placeholder taglines
-   - Edit directly in index.html if you have different ones
-
-================================================================================
-STRUCTURE
-================================================================================
-
-UNIVERSAL HEADER (same on all pages):
-┌─────────────────────────────────────────────────────────────────────────┐
-│ [Tesla]  [=== BADOLATO ELECTRICAL BANNER ===]              📞 941-300  │
-│ Click    │                                                  │   -VOLT  │
-│ Quote    │                                                  │          │
-├──────────┴──────────────────────────────────────────────────┴──────────┤
-│            ← TAGLINE (rotating on homepage, static on industry) →      │
-├─────────────────────────────────────────────────────────────────────────┤
-│ NAV 1: [Residential] [Seniors] [Commercial] [Industrial] [Marine] [PM] │
-├─────────────────────────────────────────────────────────────────────────┤
-│ NAV 2: [Home] [About] [Tesla] [Resources] [SmartSubmit] [Contact]      │
-└─────────────────────────────────────────────────────────────────────────┘
-
-HOMEPAGE:
-- Short intro with badges
-- Grid of service cards linking to industry pages
-- Trust bar
-- Footer
-
-INDUSTRY PAGES:
-- Hero section with background image
-- Services grid specific to that industry
-- Quote form
-- Tesla quote
-- Footer
-
-================================================================================
-DEPLOYMENT
-================================================================================
-
-1. Upload ALL files to GitHub repo
-2. Create /images/ folder
-3. Upload hero images
-4. Replace Tesla portrait and banner logo when ready
-5. Vercel auto-deploys
-
-================================================================================
-NEXT PHASES
-================================================================================
-
-Phase 4 (Backend):
-- Connect forms to Supabase
-- Twilio SMS notifications
-- Newsletter signup (Klaviyo/Resend)
-
-Phase 5 (Functional):
-- About page
-- Tesla Legacy page
-- Resources page
-- Contact page
-- SmartSubmit dedicated page
-
-================================================================================
-© 2025 Badolato Electrical Services | A Noetic Dharma Group Project
-================================================================================
+© 2025 Badolato Electrical Services

@@ -1,57 +1,66 @@
 /* © 2025 Badolato Electrical Services | www.badolatoelectrical.com */
-/* Version 2.0 - Multi-Page Site Script */
+/* Version 2.1 - Enhanced UX Script with Tagline Rotation */
 
 document.addEventListener('DOMContentLoaded', function() {
   
   // ========================================
-  // ROTATING TAGLINES (Homepage Only)
+  // TAGLINE ROTATION (v2.1)
   // ========================================
-  const taglineRotator = document.querySelector('.tagline-rotator');
-  
-  if (taglineRotator) {
-    const taglines = taglineRotator.querySelectorAll('.tagline-item');
-    let currentIndex = 0;
+  const taglines = document.querySelectorAll('.tagline-item');
+  if (taglines.length > 0) {
+    let currentTagline = 0;
     
-    function rotateTaglines() {
-      // Remove active from all
-      taglines.forEach(item => item.classList.remove('active'));
-      
-      // Add active to current
-      taglines[currentIndex].classList.add('active');
-      
-      // Increment index
-      currentIndex = (currentIndex + 1) % taglines.length;
-    }
-    
-    // Initial display
-    rotateTaglines();
+    // Show first tagline immediately
+    taglines[0].classList.add('active');
     
     // Rotate every 4 seconds
-    setInterval(rotateTaglines, 4000);
+    setInterval(function() {
+      taglines[currentTagline].classList.remove('active');
+      currentTagline = (currentTagline + 1) % taglines.length;
+      taglines[currentTagline].classList.add('active');
+    }, 4000);
   }
   
   // ========================================
-  // ACTIVE NAV STATE
+  // HEADER SCROLL STATE
   // ========================================
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const header = document.querySelector('.site-header');
+  let lastScroll = 0;
   
-  // Industry nav
-  const industryLinks = document.querySelectorAll('.nav-industries a');
-  industryLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-      link.classList.add('active');
+  function updateHeader() {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
     }
-  });
+    
+    lastScroll = currentScroll;
+  }
   
-  // Utility nav
-  const utilityLinks = document.querySelectorAll('.nav-utility a');
-  utilityLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
-  });
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader(); // Check on load
+  
+  // ========================================
+  // MOBILE MENU TOGGLE
+  // ========================================
+  const mobileToggle = document.getElementById('mobile-menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+  
+  if (mobileToggle && mainNav) {
+    mobileToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('is-open');
+      this.classList.toggle('is-active');
+      
+      // Toggle body scroll
+      if (mainNav.classList.contains('is-open')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    });
+  }
   
   // ========================================
   // SMOOTH SCROLL FOR ANCHOR LINKS
@@ -65,6 +74,13 @@ document.addEventListener('DOMContentLoaded', function() {
       const target = document.querySelector(href);
       
       if (target) {
+        // Close mobile menu if open
+        if (mainNav && mainNav.classList.contains('is-open')) {
+          mainNav.classList.remove('is-open');
+          mobileToggle.classList.remove('is-active');
+          document.body.style.overflow = '';
+        }
+        
         target.scrollIntoView({ 
           behavior: 'smooth', 
           block: 'start' 
@@ -74,7 +90,70 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // ========================================
-  // FORM HANDLING (Placeholder - Connect Backend Later)
+  // SCROLL ANIMATIONS (Intersection Observer)
+  // ========================================
+  const animateElements = document.querySelectorAll(
+    '.segment-card, .service-category, .testimonial, .resource-card, ' +
+    '.timeline-item, .quote-card, .step, .safety-tip'
+  );
+  
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.1
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Add staggered delay based on element index within its container
+        const siblings = entry.target.parentElement.children;
+        const siblingIndex = Array.from(siblings).indexOf(entry.target);
+        const delay = siblingIndex * 100;
+        
+        setTimeout(() => {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }, delay);
+        
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+  
+  // Set initial state and observe
+  animateElements.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+  
+  // ========================================
+  // RESOURCE NAVIGATION
+  // ========================================
+  document.querySelectorAll('.resource-nav-item').forEach(item => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Remove active from all
+      document.querySelectorAll('.resource-nav-item').forEach(i => {
+        i.classList.remove('active');
+      });
+      
+      // Add active to clicked
+      this.classList.add('active');
+      
+      // Scroll to target
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+  
+  // ========================================
+  // FORM HANDLING (Placeholder - connect backend in Phase 2)
   // ========================================
   document.querySelectorAll('form').forEach(form => {
     form.addEventListener('submit', function(e) {
@@ -84,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const formData = new FormData(this);
       const data = Object.fromEntries(formData.entries());
       
-      // Log for debugging
+      // Log for debugging (remove in production)
       console.log('Form submitted:', data);
       
       // Show success message
@@ -101,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
           margin-top: 1rem;
         ">
           <strong>✓ Thank you!</strong><br>
-          Your request has been received. We'll contact you shortly.
+          Your submission has been received. We'll contact you shortly.
         </div>
       `;
       
@@ -117,69 +196,32 @@ document.addEventListener('DOMContentLoaded', function() {
   // ========================================
   // FILE UPLOAD PREVIEW
   // ========================================
-  const fileInputs = document.querySelectorAll('input[type="file"]');
+  const fileInput = document.getElementById('ss-files');
+  const fileUploadText = document.querySelector('.file-upload-text');
   
-  fileInputs.forEach(input => {
-    input.addEventListener('change', function() {
-      const uploadText = this.closest('.file-upload').querySelector('.file-upload-text');
-      
-      if (this.files && this.files.length > 0 && uploadText) {
+  if (fileInput && fileUploadText) {
+    fileInput.addEventListener('change', function() {
+      if (this.files && this.files.length > 0) {
         const fileCount = this.files.length;
         const fileNames = Array.from(this.files).map(f => f.name).join(', ');
         
-        uploadText.innerHTML = `
-          <span style="font-size: 2rem;">✓</span>
+        fileUploadText.innerHTML = `
+          <span class="file-upload-icon">✓</span>
           <span><strong>${fileCount} file${fileCount > 1 ? 's' : ''} selected</strong></span>
-          <small style="word-break: break-all; max-width: 100%;">${fileNames}</small>
+          <small style="word-break: break-all;">${fileNames}</small>
         `;
-        uploadText.style.borderColor = '#2E7D32';
-        uploadText.style.background = '#E8F5E9';
-        uploadText.style.color = '#2E7D32';
+        fileUploadText.style.borderColor = '#2E7D32';
+        fileUploadText.style.background = '#E8F5E9';
+        fileUploadText.style.color = '#2E7D32';
       }
     });
-  });
-  
-  // ========================================
-  // SCROLL ANIMATIONS (Cards)
-  // ========================================
-  const animateElements = document.querySelectorAll(
-    '.service-card, .industry-service-item'
-  );
-  
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px 0px -30px 0px',
-    threshold: 0.1
-  };
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const siblings = entry.target.parentElement.children;
-        const siblingIndex = Array.from(siblings).indexOf(entry.target);
-        const delay = siblingIndex * 80;
-        
-        setTimeout(() => {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }, delay);
-        
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-  
-  animateElements.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-    observer.observe(el);
-  });
+  }
   
   // ========================================
   // CONSOLE BRANDING
   // ========================================
   console.log('%c⚡ Badolato Electrical Services', 'color: #003366; font-size: 18px; font-weight: bold;');
   console.log('%c"The present is theirs; the future is mine." — Nikola Tesla', 'color: #7B1FA2; font-style: italic;');
+  console.log('%c© 2025 Badolato Electrical Services | www.badolatoelectrical.com', 'color: #757575;');
   
 });
