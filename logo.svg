@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <defs>
+    <!-- Gradient for electric arc effect -->
+    <linearGradient id="electricGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D0A8E2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E8CFF0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D0A8E2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for Tesla coil metal -->
+    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D8D0C8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B0A8A0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A88868;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Tesla Coil Icon -->
+  <g transform="translate(15, 10)">
+    <!-- Coil base -->
+    <rect x="20" y="70" width="30" height="25" rx="2" fill="url(#metalGradient)"/>
+    
+    <!-- Coil stem -->
+    <rect x="30" y="35" width="10" height="40" fill="url(#metalGradient)"/>
+    
+    <!-- Coil toroid (donut top) -->
+    <ellipse cx="35" cy="32" rx="18" ry="8" fill="url(#metalGradient)"/>
+    <ellipse cx="35" cy="32" rx="12" ry="5" fill="#ffffff"/>
+    
+    <!-- Electric arcs -->
+    <g filter="url(#glow)">
+      <!-- Arc 1 - left -->
+      <path d="M 20 28 Q 5 15, 12 5 Q 8 12, 3 8" 
+            stroke="url(#electricGradient)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- Arc 2 - top left -->
+      <path d="M 28 22 Q 22 8, 30 2" 
+            stroke="url(#electricGradient)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- Arc 3 - top -->
+      <path d="M 35 24 Q 35 12, 38 3 Q 36 10, 42 5" 
+            stroke="url(#electricGradient)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- Arc 4 - top right -->
+      <path d="M 42 22 Q 48 8, 40 2" 
+            stroke="url(#electricGradient)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- Arc 5 - right -->
+      <path d="M 50 28 Q 65 15, 58 5 Q 62 12, 67 8" 
+            stroke="url(#electricGradient)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+  
+  <!-- Company Name: BADOLATO -->
+  <text x="90" y="55" font-family="Arial Black, Helvetica, sans-serif" font-size="36" font-weight="900" fill="#003D7A" letter-spacing="2">
+    BADOLATO
+  </text>
+  
+  <!-- Subtitle: ELECTRICAL SERVICES -->
+  <text x="90" y="78" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#6B7280" letter-spacing="4">
+    ELECTRICAL SERVICES
+  </text>
+  
+  <!-- Tagline: Licensed • Bonded • Insured -->
+  <text x="90" y="100" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#9CA3AF" letter-spacing="1">
+    LICENSED • BONDED • INSURED
+  </text>
+  
+</svg>

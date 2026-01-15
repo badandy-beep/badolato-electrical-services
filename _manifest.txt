@@ -1,47 +1,68 @@
 ================================================================================
-BES-Website-v1.0_2025-Jan-15.zip
+BES-Website-v1.1_2025-Jan-15.zip
 MANIFEST
 ================================================================================
 
 Project: BES - Badolato Electrical Services
 Created: 15-Jan-2025
-Version: 1.0 (Initial Release)
+Version: 1.1
 
 ================================================================================
 CONTENTS
 ================================================================================
 
 1. index.html       - Complete single-page website
-                      - Hero, trust bar, 6 customer segments
+                      - Hero with Tesla quote
+                      - Trust bar (5 stats)
+                      - 6 customer segments
+                      - The Oath section
+                      - Services grid (4 categories)
+                      - Seniors section with discount callout
+                      - 6 testimonials
+                      - About section (Michael's story)
+                      - Tesla Connection section
+                      - Contractors section
                       - SmartSubmit™ intake form
-                      - Services grid, About, Contact
+                      - Emergency callout
+                      - Contact form
                       - Mobile responsive
 
-2. styles.css       - Professional light theme styling
-                      - CSS variables for easy customization
-                      - Responsive breakpoints
+2. styles.css       - Complete styling
+                      - CSS variables for theming
+                      - Tesla purple color palette
+                      - Dark theme for Tesla section
+                      - All responsive breakpoints
 
-3. README.md        - GitHub repository documentation
+3. logo.svg         - Tesla coil logo with electric arcs
+                      - Text: BADOLATO / ELECTRICAL SERVICES
+                      - Tagline: Licensed • Bonded • Insured
+
+4. README.md        - GitHub repository documentation
+
+5. _manifest.txt    - This file
 
 ================================================================================
 DEPLOYMENT INSTRUCTIONS
 ================================================================================
 
 1. Unzip all files
-2. Upload to GitHub repo: badandy-beep/badolato-electrical-services
-3. Connect to Vercel for auto-deployment
-4. Live URL will be: badolato-electrical-services.vercel.app
+2. Go to GitHub repo: github.com/badandy-beep/badolato-electrical-services
+3. Click "Add file" → "Upload files"
+4. Drag index.html, styles.css, logo.svg, README.md
+5. Commit message: "v1.1 - Tesla content, testimonials, logo"
+6. Click "Commit changes"
+7. Connect to Vercel for deployment
 
 ================================================================================
-PHASE 2 TODO (Not included in v1.0)
+PLACEHOLDERS (Phase 2)
 ================================================================================
 
-- SmartSubmit™ backend (audio/video upload + transcription)
-- Calendar integration
-- SMS/Twilio integration
-- Newsletter signup (Klaviyo)
-- vCard download
-- Logo SVG asset
+- [ ] Michael Badolato photo (About section)
+- [ ] Tesla/coil imagery (Tesla Connection section)
+- [ ] Hero image (Michael at work)
+- [ ] SmartSubmit™ backend integration
+- [ ] Form submission handling
+- [ ] Real testimonials (once available)
 
 ================================================================================
 © 2025 Badolato Electrical Services | A Noetic Dharma Group Project
