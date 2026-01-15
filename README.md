@@ -1,36 +1,39 @@
 # Badolato Electrical Services (BES)
 
-**Version:** 1.2  
+**Version:** 1.3  
 **Updated:** January 15, 2025
 
-Licensed, bonded & insured electrical contractor serving Southwest Florida. Residential, commercial, marine & industrial. Founded by 3rd-generation Sarasota business owner Michael Badolato. Features SmartSubmit™ — upload photos/videos for fast estimates. 24/7 emergency response.
+Bonded and insured electrical services company serving Southwest Florida. Residential, commercial, marine & industrial. Founded by 3rd-generation Sarasota business owner Michael Badolato. Features SmartSubmit™ — upload photos/videos for fast estimates. 24/7 emergency response.
 
 ## Live Site
 
 **Deployment:** Vercel (pending)  
 **Domain:** badolatoelectrical.com (pending)
 
-## What's New in v1.2
+## What's New in v1.3
 
-### Tesla Content Expansion
-- **Tesla Timeline** — Interactive biography from 1856-1943 with key milestones
-- **Documentary Embed** — PBS American Experience Tesla documentary (YouTube)
-- **Quotes Collection** — 6 curated verified quotes from Tesla's writings
-- **Tesla Archives** — Links to Nikola Tesla Museum, Project Gutenberg, and more
+### License Disclosure Updates (Florida Statute §489.119 Compliance)
 
-### New Resources Section
-- **Professional Organizations** — NECA, IBEW, NFPA, ESFI, IEC links
-- **Florida Licensing** — DBPR license verification, state regulations
-- **Energy Tools** — FPL Energy Manager, Duke Energy calculators, Sarasota DIY kits
-- **Safety Tips** — Warning signs, hurricane prep, extension cord safety
-- **Tesla Archives** — Museums, writings, documentaries
+This update adds proper license disclosure language throughout the site to comply with Florida electrical contractor advertising requirements. Michael Badolato operates as a qualified electrician under a master electrician's license (a common and legitimate arrangement in Florida's electrical industry).
 
-### Additional Tesla Quotes Throughout Site
-- Hero section: 1891 lecture quote
-- Services section: Foundation/duty quote
-- Marine section: Remote control boat reference
-- Industrial section: "Small metal ball" quote
-- SmartSubmit section: 1908 wireless communication prediction
+**Key Changes:**
+- **About Section** — Added License Disclosure Box explaining the licensing arrangement
+- **Resources Section** — Updated License Verification Box with full disclosure and DBPR verification link
+- **Contact Section** — Added license number display
+- **Footer** — Added licensing disclosure statement
+- **Logo** — Updated tagline from "Licensed • Bonded • Insured" to "Bonded • Insured • FL License #EC-XXXXXX"
+- **Hero Section** — Changed "Master Electrician Craftsmanship" to "Expert Electrical Craftsmanship" for accuracy
+
+**Placeholder Text (Update Before Launch):**
+- `#EC-XXXXXX` — Replace with actual Florida Certified Electrical Contractor license number
+- `[QUALIFYING CONTRACTOR NAME]` — Replace with actual name of the qualifying contractor/business
+
+### Previous Features (v1.2)
+- Tesla Timeline — Interactive biography from 1856-1943 with key milestones
+- Documentary Embed — PBS American Experience Tesla documentary (YouTube)
+- Quotes Collection — 6 curated verified quotes from Tesla's writings
+- Tesla Archives — Links to Nikola Tesla Museum, Project Gutenberg, and more
+- Resources Section — Professional organizations, Florida licensing info, energy tools, safety tips
 
 ### Previous Features (v1.1)
 - Tesla Connection section with verified quotes
@@ -39,6 +42,20 @@ Licensed, bonded & insured electrical contractor serving Southwest Florida. Resi
 - Enhanced About section with Tesla origin story
 - SVG logo with Tesla coil design
 - Improved typography and spacing
+
+## Licensing Disclosure (For Reference)
+
+Per Florida Statute §489.119 and §489.127, all electrical contractor advertising must include:
+1. The qualifying contractor's license number
+2. Clear disclosure when operating under another contractor's license
+
+**Current Disclosure Language:**
+> "All electrical work performed under Florida Certified Electrical Contractor License #EC-XXXXXX held by [QUALIFYING CONTRACTOR NAME]. Michael Badolato operates as a qualified electrician under this license pursuant to Florida Statute Chapter 489."
+
+This arrangement is standard in Florida's electrical industry and ensures:
+- Full regulatory compliance
+- Consumer protection
+- Proper supervision and permitting of all work
 
 ## Services
 
@@ -66,12 +83,19 @@ Licensed, bonded & insured electrical contractor serving Southwest Florida. Resi
 ## Files
 
 ```
-├── index.html      # Main website (expanded with Resources & Tesla content)
-├── styles.css      # All styling (new sections added)
-├── logo.svg        # Tesla coil logo
+├── index.html      # Main website (v1.3 with license disclosure)
+├── styles.css      # All styling (new license disclosure boxes)
+├── logo.svg        # Tesla coil logo (updated tagline)
 ├── README.md       # This file
 └── _manifest.txt   # Package contents
 ```
+
+## Placeholders to Update Before Launch
+
+| Placeholder | Replace With | Location |
+|------------|--------------|----------|
+| `#EC-XXXXXX` | Actual FL license number | Logo, About, Resources, Contact, Footer |
+| `[QUALIFYING CONTRACTOR NAME]` | Actual qualifier name/business | About, Resources, Footer |
 
 ## Resources Linked
 

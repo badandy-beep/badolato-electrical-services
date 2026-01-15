@@ -940,6 +940,38 @@ ul, ol {
   color: var(--gray-700);
 }
 
+/* ========================================
+   LICENSE DISCLOSURE BOX (About Section)
+======================================== */
+.license-disclosure-box {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, var(--blue-light) 0%, rgba(0, 86, 166, 0.1) 100%);
+  border: 1px solid var(--blue-primary);
+  border-left: 4px solid var(--blue-primary);
+  border-radius: var(--radius-md);
+}
+
+.license-disclosure-box h4 {
+  color: var(--blue-dark);
+  margin-bottom: var(--space-sm);
+  font-size: 1rem;
+}
+
+.license-disclosure-box p {
+  font-size: 0.9375rem;
+  color: var(--gray-700);
+}
+
+.license-disclosure-box .disclosure-note {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(0, 86, 166, 0.2);
+  font-size: 0.8125rem;
+  font-style: italic;
+  color: var(--gray-600);
+}
+
 .about-highlights {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1433,14 +1465,15 @@ ul, ol {
   }
 }
 
-/* License Verification Box */
+/* ========================================
+   LICENSE VERIFICATION BOX (Resources)
+======================================== */
 .license-verification-box {
   margin-top: var(--space-2xl);
   padding: var(--space-xl);
   background: var(--blue-dark);
   color: var(--white);
   border-radius: var(--radius-lg);
-  text-align: center;
 }
 
 .license-verification-box h4 {
@@ -1450,6 +1483,33 @@ ul, ol {
 
 .license-verification-box p {
   color: rgba(255, 255, 255, 0.85);
+}
+
+.license-verification-box .license-details {
+  margin: var(--space-lg) 0;
+  padding: var(--space-lg);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--gold);
+}
+
+.license-verification-box .license-details p {
+  margin-bottom: var(--space-sm);
+  font-size: 1rem;
+}
+
+.license-verification-box .license-details p:last-child {
+  margin-bottom: 0;
+}
+
+.license-verification-box .license-note {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: var(--space-lg);
+  padding: var(--space-md);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-sm);
 }
 
 .license-verification-box .btn-secondary {
@@ -1990,6 +2050,13 @@ textarea {
   color: var(--gray-600);
 }
 
+.contact-license .license-disclosure-small {
+  font-size: 0.8125rem;
+  color: var(--blue-primary);
+  font-weight: 600;
+  margin-top: var(--space-xs);
+}
+
 .contact-form {
   background: var(--white);
   border: 1px solid var(--gray-200);
@@ -2103,6 +2170,24 @@ textarea {
   border-top: 1px solid var(--gray-700);
   color: var(--danger) !important;
   font-weight: 600;
+}
+
+/* ========================================
+   FOOTER LICENSE DISCLOSURE
+======================================== */
+.footer-license-disclosure {
+  padding: var(--space-lg) 0;
+  margin-top: var(--space-lg);
+  border-bottom: 1px solid var(--gray-700);
+  text-align: center;
+}
+
+.footer-license-disclosure p {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .footer-bottom {
